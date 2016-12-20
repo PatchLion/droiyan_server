@@ -1,0 +1,9 @@
+; KeyHooks.def : Declares the module parameters for the DLL.
+
+LIBRARY      "KeyHooks"
+DESCRIPTION  'KeyHooks Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+     InstallHotKey @1
+	 UninstallHotKey @2

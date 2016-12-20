@@ -1,0 +1,405 @@
+
+CString CUserManagerCom::GetLogID()
+{
+	CString strDate, strLogID;
+	CTime timeCurrent = CTime::GetCurrentTime ();
+	if (m_timeLastLog.GetDay () != timeCurrent.GetDay ())
+	{
+		m_timeLastLog = timeCurrent;
+		m_nCurLogID = 0;
+
+		SetConfigInt (NULL, _T("LastLogDate"), m_timeLastLog.GetTime ());
+	}
+
+	strDate = m_timeLastLog.Format (_T("%Y%m%d"));
+	strLogID.Format (_T("%s_%06d"), strDate, m_nCurLogID++);
+	SetConfigInt (NULL, _T("LastLogID"), m_nCurLogID);
+
+	return strLogID;
+}
+// DB Message Handler Functions
+
+int CUserManagerCom::OnDBCreateTableAck(CMsg & msg)
+{
+	CString strDBName, strTableName;
+	msg >> strDBName >> strTableName;
+
+	if (strDBName != m_strGameID)
+		return ERROR_DB;
+
+	if (strTableName == USER_TABLE_NAME)
+	{
+		msg >> m_nDBUser;
+		if (!m_nDBUser)
+			return ERROR_DB;
+	}
+	else if (strTableName == SERIAL_TABLE_NAME)
+	{
+		msg >> m_nDBSerial;
+		if (!m_nDBSerial)
+			return ERROR_DB;
+	}
+	else if (strTableName == LOG_TABLE_NAME)
+	{
+		msg >> m_nDBLog;
+		if (!m_nDBLog)
+			return ERROR_DB;
+	}
+	else
+		return ERROR_DB;
+
+	m_fSuspend = (!m_nDBUser || !m_nDBSerial || !m_nDBLog);
+
+	return 0;
+}
+
+int CUserManagerCom::OnDBOpenTableAck(CMsg & msg)
+{
+	CString strDBName, strTableName;
+	msg >> strDBName >> strTableName;
+
+	if (strDBName != m_strGameID)
+		return ERROR_DB;
+
+	if (strTableName == USER_TABLE_NAME)
+	{
+		msg >> m_nDBUser;
+		if (!m_nDBUser)
+		{
+			CMsg msgSend;
+			msgSend.ID (DB_CREATETABLE_REQ) 
+				<< m_strGameID << USER_TABLE_NAME << 9
+				<< _T("USERID") << FIELD_TYPE_STRING << 13
+				<< _T("PASSWD") << FIELD_TYPE_STRING << 11
+				<< _T("NAME") << FIELD_TYPE_STRING << 11
+				<< _T("SOCNO") << FIELD_TYPE_STRING << 15
+				<< _T("ADDR") << FIELD_TYPE_STRING << 61
+				<< _T("TEL") << FIELD_TYPE_STRING << 21
+				<< _T("EMAIL") << FIELD_TYPE_STRING << 31
+				<< _T("REGDATE") << FIELD_TYPE_DWORD << 4
+				<< _T("LOGDATE") << FIELD_TYPE_DWORD << 4
+				<< _T("USERID");
+			m_desDB.Say (msgSend);
+		}
+	}
+	else if (strTableName == SERIAL_TABLE_NAME)
+	{
+		msg >> m_nDBSerial;
+		if (!m_nDBSerial)
+		{
+			CMsg msgSend;
+			msgSend.ID (DB_CREATETABLE_REQ) 
+				<< m_strGameID << SERIAL_TABLE_NAME << 11
+				<< _T("SERIAL") << FIELD_TYPE_WORD << 2
+				<< _T("TYPE") << FIELD_TYPE_BYTE << 1
+				<< _T("PASSWD") << FIELD_TYPE_STRING << 11
+				<< _T("REGDATE") << FIELD_TYPE_DWORD << 4
+				<< _T("LOGDATE") << FIELD_TYPE_DWORD << 4
+				<< _T("STARTDATE") << FIELD_TYPE_DWORD << 4
+				<< _T("ENDDATE") << FIELD_TYPE_DWORD << 4
+				<< _T("BANK") << FIELD_TYPE_STRING << 11
+				<< _T("PAYNAME") << FIELD_TYPE_STRING << 11
+				<< _T("PAYDATE") << FIELD_TYPE_DWORD << 4
+				<< _T("PRICE") << FIELD_TYPE_DWORD << 4
+				<< _T("SERIAL");
+			m_desDB.Say (msgSend);
+		}
+	}
+	else if (strTableName == LOG_TABLE_NAME)
+	{
+		msg >> m_nDBLog;
+		if (!m_nDBLog)
+		{
+			CMsg msgSend;
+			msgSend.ID (DB_CREATETABLE_REQ) 
+				<< m_strGameID << LOG_TABLE_NAME << 8
+				<< _T("LOGID") << FIELD_TYPE_STRING << 16	// 19980317_001432 : 년도월일_일련번호
+				<< _T("SERVICE") << FIELD_TYPE_DWORD << 4
+				<< _T("USERID") << FIELD_TYPE_STRING << 13
+				<< _T("SERIAL") << FIELD_TYPE_WORD << 2
+				<< _T("LOGIN") << FIELD_TYPE_DWORD << 4
+				<< _T("LOGOUT") << FIELD_TYPE_DWORD << 4
+				<< _T("REASON") << FIELD_TYPE_BYTE << 1
+				<< _T("IPADDR") << FIELD_TYPE_STRING << 16
+				<< _T("LOGID");
+			m_desDB.Say (msgSend);
+		}
+	}
+	else
+		return ERROR_DB;
+
+	m_fSuspend = (!m_nDBUser || !m_nDBSerial || !m_nDBLog);
+
+	return 0;
+}
+
+int CUserManagerCom::OnDBGetRecordAck(CMsg & msg)
+{
+	int nTable;
+
+	msg >> nTable;
+
+	if (nTable == m_nDBSerial)
+	{
+		CUser* pUser;
+		int nAckCode;
+		msg >> (int&)pUser >> nAckCode;
+
+		// Check this user pointer is valid
+		CSessDesc* pDes = FindSessionByUser (pUser);
+		if (!pDes)
+			return 0;
+
+		// if this serial-no is not on DB, check invalid.
+		if (!nAckCode)
+		{
+			pUser->m_bCheckResult = LR_SN_INVALID;
+			return 0;
+		}
+		
+		// get serial-no data from message
+		DWORD dwRegTime, dwLogTime, dwStartTime, dwEndTime, dwPayTime;
+		msg >> pUser->m_wSerial
+			>> pUser->m_bType
+			>> pUser->m_strSerialPasswd
+			>> dwRegTime
+			>> dwLogTime
+			>> dwStartTime
+			>> dwEndTime
+			>> pUser->m_strBank
+			>> pUser->m_strPayName
+			>> dwPayTime
+			>> pUser->m_dwPrice;
+		pUser->m_timeSerialReg = CTime (dwRegTime);
+		pUser->m_timeSerialStart = CTime (dwStartTime);
+		pUser->m_timeSerialEnd = CTime (dwEndTime);
+		pUser->m_timeSerialPay = CTime (dwPayTime);
+
+		CTimeSpan timespanValidDate (VALID_SERIAL_DATE, 0, 0, 0);
+		CTime timeCurrent = CTime::GetCurrentTime ();
+
+		// if current day is 180 days over registered day, check out-of-date
+		if (pUser->m_timeSerialReg + timespanValidDate < timeCurrent)
+			pUser->m_bCheckResult = LR_SN_OUTOFDATE;
+
+		// if password is null, check not to be used.
+		else if (pUser->m_strSerialPasswd == _T(""))
+			pUser->m_bCheckResult = LR_SN_UNREG;
+
+		// check if out-of-date
+		else if (pUser->m_timeSerialStart > timeCurrent ||
+			pUser->m_timeSerialEnd < timeCurrent)
+			pUser->m_bCheckResult = LR_SN_OUTOFDATE;
+
+		// else it is valid serial...
+		else
+		{
+			pUser->m_bCheckResult = LR_SN_VALID;
+			CheckSerialDup (pUser);
+
+			CMsg msgDB;
+			msgDB.ID (DB_SETRECORD_REQ) << m_nDBSerial << 0
+				<< pUser->m_wSerial
+				<< pUser->m_bType
+				<< pUser->m_strSerialPasswd
+				<< pUser->m_timeSerialReg.GetTime ()
+				<< pUser->m_timeLog.GetTime ()
+				<< pUser->m_timeSerialStart.GetTime ()
+				<< pUser->m_timeSerialEnd.GetTime ()
+				<< pUser->m_strBank
+				<< pUser->m_strPayName
+				<< pUser->m_timeSerialPay.GetTime ()
+				<< pUser->m_dwPrice;
+			m_desDB.Say (msgDB);
+		}
+	}
+	else if (nTable == m_nDBUser)
+	{
+		CUser* pUser;
+		int nAckCode;
+		msg >> (int&)pUser >> nAckCode;
+
+		// Check this user class pointer is valid
+		CSessDesc* pDes = FindSessionByUser (pUser);
+		if (!pDes)
+			return 0;
+
+		// if this user id is not on DB, check unregistered.
+		if (!nAckCode)
+			pUser->m_bLoginResult = LR_USER_UNREG;
+		else
+		{
+			CString strUserID, strPasswd;
+			DWORD dwRegTime;
+			msg >> strUserID
+				>> strPasswd
+				>> pUser->m_strName
+				>> pUser->m_strSocNo
+				>> pUser->m_strAddr
+				>> pUser->m_strTel
+				>> pUser->m_strEMail
+				>> dwRegTime;
+			pUser->m_timeReg = CTime (dwRegTime);
+
+			if (pUser->m_strUserID == strUserID &&
+				pUser->m_strPasswd == strPasswd)
+			{
+				pUser->m_bLoginResult = LR_USER_VALID;
+				CheckUserDup (pUser);
+
+				CMsg msgDB;
+				msgDB.ID (DB_SETRECORD_REQ) << m_nDBUser << 0
+					<< pUser->m_strUserID
+					<< pUser->m_strPasswd
+					<< pUser->m_strName
+					<< pUser->m_strSocNo
+					<< pUser->m_strAddr
+					<< pUser->m_strTel
+					<< pUser->m_strEMail
+					<< pUser->m_timeReg.GetTime ()
+					<< pUser->m_timeLog.GetTime ();
+				m_desDB.Say (msgDB);
+			}
+			else
+				pUser->m_bLoginResult = LR_USER_INVALID;
+		}
+
+		CMsg msgSend;
+		msgSend.ID (UM_LOGIN_ACK) << pUser->m_nID 
+			<< pUser->m_bLoginResult << pUser->m_bCheckResult;
+		pDes->Say (msgSend);
+	}
+
+	return 0;
+}
+
+int CUserManagerCom::OnDBSetRecordAck(CMsg & msg)
+{
+	int nTable;
+
+	msg >> nTable;
+
+	if (nTable == m_nDBUser)
+	{
+		CUser* pUser;
+		int nAckCode;
+		msg >> (int&)pUser >> nAckCode;
+
+		if (!pUser)
+			return 0;
+
+		CSessDesc* pDes = FindSessionByUser (pUser);
+		if (!pDes)
+			return 0;
+
+		// if set record is failed...
+		CMsg msgSend;
+		msgSend.ID (UM_SETINFO_ACK) << pUser->m_nID;
+		if (!nAckCode)
+			msgSend << (BYTE)0;
+		else
+			msgSend << (BYTE)1;
+		pDes->Say (msgSend);
+	}
+	else if (nTable == m_nDBSerial)
+	{
+		CUser* pUser;
+		int nAckCode;
+		msg >> (int&)pUser >> nAckCode;
+
+		if (!pUser)
+			return 0;
+
+		CSessDesc* pDes = FindSessionByUser (pUser);
+		if (!pDes)
+			return 0;
+
+		// if set record is failed...
+		CMsg msgSend;
+		msgSend.ID (UM_REGSN_ACK) << pUser->m_nID;
+		if (!nAckCode)
+			msgSend << (BYTE)0;
+		else
+		{
+			pUser->m_bCheckResult = LR_SN_VALID;
+			CheckSerialDup (pUser);
+
+			msgSend << (BYTE)1;
+		}
+		pDes->Say (msgSend);
+	}
+
+	return 0;
+}
+
+int CUserManagerCom::OnDBInsertRecordAck(CMsg & msg)
+{
+	int nTable;
+
+	msg >> nTable;
+
+	if (nTable == m_nDBUser)
+	{
+		CUser* pUser;
+		int nNumRec;
+		msg >> (int&)pUser >> nNumRec;
+
+		// Check this user class pointer is valid
+		CSessDesc* pDes = FindSessionByUser (pUser);
+		if (!pDes)
+			return 0;
+
+		CMsg msgSend;
+		msgSend.ID (UM_REGUSER_ACK) << pUser->m_nID;
+		if (nNumRec == 0)
+			msgSend << (BYTE)0;
+		else
+		{
+			pUser->m_bLoginResult = LR_USER_VALID;
+			CheckUserDup (pUser);
+
+			msgSend << (BYTE)1;
+		}
+		pDes->Say (msgSend);
+	}
+
+	return 0;
+}
+
+void CUserManagerCom::OpenDB()
+{
+	CMsg msg;
+
+	msg.ID (DB_OPENTABLE_REQ) << m_strGameID << USER_TABLE_NAME;
+	m_desDB.Say (msg);
+
+	msg.ID (DB_OPENTABLE_REQ) << m_strGameID << SERIAL_TABLE_NAME;
+	m_desDB.Say (msg);
+
+	msg.ID (DB_OPENTABLE_REQ) << m_strGameID << LOG_TABLE_NAME;
+	m_desDB.Say (msg);
+}
+
+void CUserManagerCom::CloseDB()
+{
+	CMsg msg;
+
+	if (m_nDBUser)
+	{
+		msg.ID (DB_CLOSETABLE_REQ) << m_nDBUser;
+		m_desDB.Say (msg);
+	}
+
+	if (m_nDBSerial)
+	{
+		msg.ID (DB_CLOSETABLE_REQ) << m_nDBSerial;
+		m_desDB.Say (msg);
+	}
+
+	if (m_nDBLog)
+	{
+		msg.ID (DB_CLOSETABLE_REQ) << m_nDBLog;
+		m_desDB.Say (msg);
+	}
+}
+

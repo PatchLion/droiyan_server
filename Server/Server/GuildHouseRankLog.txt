@@ -1,0 +1,6 @@
+(12M 23D 0H 20MIN)	Sid-1 iGuildID-9166 tNum-20 sValue-48 sGuildLevel-1733 iLevelTime-54266
+(12M 23D 0H 20MIN)	Sid-2 iGuildID-2051 tNum-19 sValue-48 sGuildLevel-1625 iLevelTime-56203
+(12M 23D 0H 20MIN)	Sid-3 iGuildID-9110 tNum-18 sValue-48 sGuildLevel-1592 iLevelTime-56860
+(12M 23D 0H 20MIN)	Sid-4 iGuildID-9125 tNum-18 sValue-48 sGuildLevel-1516 iLevelTime-60187
+(12M 23D 0H 20MIN)	Sid-5 iGuildID-9005 tNum-16 sValue-48 sGuildLevel-1383 iLevelTime-62734
+(12M 23D 0H 20MIN)	Sid-6 iGuildID-2135 tNum-16 sValue-48 sGuildLevel-1393 iLevelTime-63797

@@ -1,0 +1,23 @@
+#ifndef __MCOMMON_H
+#define __MCOMMON_H
+
+// SOCKET TYPE...
+#define SOCKET_FOR_NONESTATE	0
+#define SOCKET_FOR_SERVER		1
+#define SOCKET_FOR_USER			2
+#define SOCKET_FOR_USERSERVER	3
+#define SOCKET_FOR_BUDDYSERVER	4
+#define SOCKET_FOR_APPLICATION	9
+
+// USER STATUS 
+#define USER_DISCONNECTED		0
+#define USER_CONNECTED			1
+#define USER_LOGEDIN			2
+#define USER_DOWNLOADIN			3
+
+#define AUTOMATA_THREAD2		2
+
+// Chinese MSG 
+#define _CHINESE_MSG
+
+#endif

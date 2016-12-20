@@ -1,0 +1,668 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "Server ??(&A)..."
+    IDS_EVENT_ATT7_ITEM     "?? %s??? 7? ??????? ???? ??????."
+    IDS_EVENT_DEF7_ITEM     "?? %s??? 7? ??????? ???? ??????."
+    IDS_EVENT_ATT6_ITEM     "?? %s??? 6? ??????? ???? ??????."
+    IDS_EVENT_DEF6_ITEM     "?? %s??? 6? ??????? ???? ??????."
+    IDS_EVENT_ATT5_ITEM     "?? %s??? 5? ??????? ???? ??????."
+    IDS_EVENT_DEF5_ITEM     "?? %s??? 5? ??????? ???? ??????."
+    IDS_EVENT_ATT4_ITEM     "?? %s??? 4? ??????? ???? ??????."
+    IDS_EVENT_DEF4_ITEM     "?? %s??? 4? ??????? ???? ??????."
+    IDS_EVENT_ATT3_ITEM     "?? %s??? 3? ??????? ???? ??????."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_EVENT_DEF3_ITEM     "?? %s??? 3? ??????? ???? ??????."
+    IDS_EVENT_RESET_STAT    "?? %s??? ??? ??? ???? ??????."
+    IDS_EVENT_PERSONAL      "?? %s??? ?? ??? ???? ??????."
+    IDS_SERVERDLG_SERVERINFOERROR "INI ? ServerInfo DB ?? Server ??? ?? ????."
+    IDS_SERVERDLG_GIANTBIGFOOT "???? ??"
+    IDS_SERVERDLG_STOREERROR "Store DB ? Store Sell DB ? ???? ????."
+    IDS_SERVERDLG_CURRENTUSER 
+                            "Droiyan Online Server Ver 0.1 - Current User : %d"
+    IDS_SERVERDLG_OPERATOR  "???"
+    IDS_USER_UNDER_CONSTRUCTION "Feature is not yet implemented."
+    IDS_USER_DOUBLE_ACCOUNT "Someone else is already loged into this account."
+    IDS_USER_DOUBLE_CHAR    "Someone else is already loged onto this character."
+    IDS_USER_OPERATOR_MAIL1 "欢迎来到帝王决战"
+    IDS_USER_OPERATOR_MAIL2 "http://www.172dr.com"
+    IDS_USER_GUILD_DEFEAT   "%s has been defeated."
+    IDS_USER_NOT_ENOUGH_STAMINA "你没有足够的精力"
+    IDS_USER_PK_COUNT       "你的杀人数为 %d."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_USER_INVALID_MONSTER_NAME "?? ???? ???????."
+    IDS_USER_INVALID_POINT_CALL_MONSTER "?????? ??? ???? ????."
+    IDS_USER_TOO_LOW_CITY_VALUE "你人品太差啦."
+    IDS_USER_TOO_LOW_OTHER_CITY_VALUE "???? ????? ?? ???? ????."
+    IDS_USER_TOO_LOW_LEVEL_FOR_SHOUT "级别太低不能呐喊."
+    IDS_USER_NOT_ENOUGH_STAMINA_FOR_SHOUT 
+                            "You do not have the required stamina to shout."
+    IDS_USER_MAKE_BUDDY_FIRST "You must be in a party."
+    IDS_USER_ITEM_RECEIVE_DENIED "Exchanging of items is blocked."
+    IDS_USER_ITEM_RECEIVE_PERMITTED "Exchanging of items is allowed."
+    IDS_USER_NOT_CONNECTED_NOW "%s is not online."
+    IDS_USER_HAVE_NOT_PERMISSION "你没权限."
+    IDS_USER_INVALID_BUDDY_CONDITION "?? ????? ?? ????."
+    IDS_USER_REQUEST_DENIED "%s ?? ??? ???????."
+    IDS_USER_BUDDY_LEVEL    "Cannot Invite. %s's level must be no more than 20 levels lower than your level."
+    IDS_USER_BUDDY_ALREADY  "%s is already in your Party."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_USER_BUDDY_MAX_USER "Party has reached max party members of 4."
+    IDS_USER_BBS_DELETED_ALREADY 
+                            "Post has already been deleted from Bulletin board."
+    IDS_USER_NEED_OPERATOR  "Only for GM."
+    IDS_USER_BBS_NO_PERMISSION 
+                            "You dont have permission to use Bulletin board."
+    IDS_USER_BBS_CANT_DELETE "Cannot delete post in Bulletin board."
+    IDS_USER_LEVEL_DOWN     "Your level has been decreased."
+    IDS_USER_NOT_ENOUGH_PP  "You don't have enough PP to be able to cast."
+    IDS_USER_ITEM_DAMAGED   "Item is damaged and needs to be repaired."
+    IDS_USER_SWORD_PACK_EMPTY 
+                            "You ran out of retinum packs for your laser sabre."
+    IDS_USER_BULLET_EMPTY   "You do not have any bullets remaining."
+    IDS_USER_ATTACK_FROM    "You was killed by %s."
+    IDS_USER_HIGHEST_LEVEL  "?????. %s??? ???? ???????."
+    IDS_USER_ITEM_TOO_LOW_ABILITY 
+                            "You do not have the required stats to wear."
+    IDS_USER_ITEM_OTHER_CLASS "This item is for another class. "
+    IDS_USER_BRAWL          "Fighter"
+    IDS_USER_STAFF          "Psyonic"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_USER_EDGED          "Swordsman"
+    IDS_USER_FIREARMS       "Rifleman"
+    IDS_USER_CANT_USE_THIS  "%s item cannot be used."
+    IDS_USER_DINA_RECEIVE_FROM "%s gave you %d Dina(s)."
+    IDS_USER_CANT_GIVE_EVENT_ITEM "Unable to give event item."
+    IDS_USER_OVER_WEIGHT    "You have reached your maximum weight limit."
+    IDS_USER_ITEM_RECEIVE_FROM "You have recieved %s item from %s."
+    IDS_USER_ITEM_GIVE_TO   "You have given %s item to %s."
+    IDS_USER_CANT_THROW_IN_QUEST "不能丢弃任务物品."
+    IDS_USER_CANT_THROW_EVENT_ITEM "Cannot throw away event item."
+    IDS_USER_ITEM_OVERFLOW  "? ?? ???? ????."
+    IDS_USER_CANT_BUYSELL_EVENT_ITEM "Cannot trade event item."
+    IDS_USER_OVER_WEIGHT_OTHER "Other player is overweight."
+    IDS_USER_OVER_WEIGHT_SAVE "Exchange save fail."
+    IDS_USER_OVER_WEIGHT_SAVE_OTHER "Exchange save fail."
+    IDS_USER_OVER_COUNT_SAVE_OTHER "???? ?????? ?? ??? 255????."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_USER_EXCHANGE_COMPLETED "Exchange Complete."
+    IDS_USER_NOT_THIS_LEVEL "?? ??? ????."
+    IDS_USER_ONLY_GUILD_MASTER_USE "Only Guild Master can use."
+    IDS_USER_OVER_WEIGHT_RECEIVE_ITEM 
+                            "You do not have enough weight to recieve item."
+    IDS_USER_INVEN_FULL_RECEIVE_ITEM 
+                            "You do not have any space left in your inventory."
+    IDS_USER_NOT_ENOUGH_DINA "You do not have enough Dina(s)."
+    IDS_USER_NOT_THIS_GUILD_MEMBER 
+                            "You are not a member of guild which owns this fortress."
+    IDS_USER_NOT_YET_FIX_SCHEDULE "?? ??? ???? ?? ????."
+    IDS_USER_ONLY_GUILD_MASTER_WAR "Only Guild Master can apply for war."
+    IDS_USER_CANT_APPLY_IN_WAR "Guild cannot apply for war"
+    IDS_USER_CANT_APPLY_TO_MY_GUILD 
+                            "Cannot apply to war with guild which owns fortress."
+    IDS_USER_CANT_APPLY_HAVE_FORTRESS 
+                            "Cannot apply because guild already has a fortress."
+    IDS_USER_ALREADY_APPLY_OTHER_GUILD "?? %s??? ??? ??? ???? ????."
+    IDS_USER_OVERFLOW_GUILD_WAR_ENEMY "%s has to many members in war."
+    IDS_USER_APPLIED_GUILD_WAR "???? ???????."
+    IDS_USER_NOT_FIX_SCHEDULE "??? ??? ?? ?? ????."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_USER_APPLY_CONDITION_LEVEL 
+                            "Need to be level 70+ to apply for guild war."
+    IDS_USER_APPLY_CONDITION_GMEMBER 
+                            "You need 20 guild members to apply for war."
+    IDS_USER_CANT_APPLY_HAVE_HOUSE 
+                            "You cannot apply for war because your guild has a guild house."
+    IDS_USER_ALREADY_LUINET_FORTRESS 
+                            "Cannot apply because you already own Ruinet fortress."
+    IDS_USER_ALREADY_SANAD_FORTRESS 
+                            "Cannot apply because you already own Sanard fortress."
+    IDS_USER_APPLY_FAIL     "Guild war apply failed."
+    IDS_USER_APPLY_COMPLETED "Guild war apply completed successfuly."
+    IDS_USER_NEED_NOT_CURE  "You are already healthy and do not need to be cured."
+    IDS_USER_NOT_ENOUGH_DINA_CURE "Cure failed, not enough Dina."
+    IDS_USER_CURE_COMPLETED "Cure completed."
+    IDS_USER_CANT_USE_YOUR_CITY_RANK 
+                            "Cannot use because your citizenship is too low."
+    IDS_USER_CANT_USE_IN_GUILD_WAR "Cannot use while in guild war."
+    IDS_USER_NOT_ENOUGH_DINA1 "You do not have enough Dina(s)."
+    IDS_USER_OVER_WEIGHT1   "You have reached your maximum carrying weight."
+    IDS_USER_BUY_FAIL       "Failed to buy Item(s)."
+    IDS_USER_FULL_INVEN     "You do not have any space in your inventory."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_USER_NOT_THIS_STORE_BUYSELL "Store does not exist."
+    IDS_USER_CANT_SELL_EVENT_ITEM "You cannot sell event item."
+    IDS_USER_SELL_FAIL      "Failed to sell item(s)."
+    IDS_USER_GAME_TIME_END  "Your game time has ended you need to renew your account's game time."
+    IDS_USER_GAME_TIME_REMAIN "You have %d game time remaining"
+    IDS_USER_FORCE_END_LATER_FEW_MINUTE "%d?? ?? ?????. ????? ???? ????."
+    IDS_USER_FREE_SERVICE_LEVEL "?? ??? ??? ??? 25?? ?????."
+    IDS_USER_FIRE_DAMAGE_RESET "Fire effect has been lifted."
+    IDS_USER_COLD_DAMAGE_RESET "Cold effect has been lifted."
+    IDS_USER_COLD_DAMAGED   "You have Cold effect."
+    IDS_USER_FIRE_DAMAGED   "You have fire effect."
+    IDS_USER_ONCE_MOVE_MAX  "??? ?? 500? ?? ??? ????."
+    IDS_USER_SAVE_MAX_COUNT "?? ?????? ?? ?????."
+    IDS_USER_SYSTEM_MSG01   "%d? %d? %d? %d? \t %s -> server = %d \t client = %d \t basic = %d \r\n"
+    IDS_USER_GUILD_WAR_WINNER "%s guild is the winner of the guild war."
+    IDS_USER_CALL_MONSTER_COUNT_MAX "???? ?? ?? ?? 10?????."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_USER_CALL_FAIL      "??? ??????."
+    IDS_USER_CALL_WHAT      "%s? ???????."
+    IDS_USER_ALREADY_GUILD_IN "User %s is already in guild."
+    IDS_USER_ALREADY_OTHER_GUILD_IN "User %s is already in another guild."
+    IDS_USER_GUILD_MAKE_LEVEL 
+                            "You do not have the required level of %d to establish a guild."
+    IDS_USER_GUILD_MAKE_DINA 
+                            "You do not have the required dina of %d to establish a guild."
+    IDS_USER_GUILD_MAKE_CITY_RANK 
+                            "You do not have the required citizenship of %s to establish a guild."
+    IDS_USER_SEE_EACH_OTHER "?? ?? ??? ???."
+    IDS_USER_ENTER_SUCCRESS "??? ?? ?????."
+    IDS_USER_NEW_MEMBER     "Welcome %s who has just joined the guild."
+    IDS_USER_NO_OUT_IN_WAR  "?????? ??? ? ????."
+    IDS_USER_OUT_GUILD      "???? ?? ?????."
+    IDS_USER_OUT_MEMBER     "%s has been kicked from the guild."
+    IDS_USER_CANT_DISMISS_IN_WAR "Cannot disband guild while in a war."
+    IDS_USER_CANT_DISMISS_FORTRESS 
+                            "Cannot disband guild because own fortress."
+    IDS_USER_DISMISS_COMPLETED "Guild has been disbanded."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_USER_CANT_DISMISS_IN_BANK 
+                            "Cannot disband guild because items are in the guild bank."
+    IDS_USER_KICKOUT_GUILD  "You have been kicked from guild."
+    IDS_USER_KICKOUT_MEMBER "%s has been kicked from the guild."
+    IDS_USER_OPERATOR       "???"
+    IDS_USER_CANT_USE_GUILD_BANK_NOW "Cannot use the guild bank."
+    IDS_USER_GUILD_BANK_IN_USE "User %s is currently using the guild bank."
+    IDS_USER_CANT_SHARE_EVENT_ITEM "Cannot share event item."
+    IDS_USER_NO_PERMISSION_USE "???? ?? ??? ????."
+    IDS_USER_ALREADY_OTHER_GUILD_USE 
+                            "House is already owned by another guild."
+    IDS_USER_CANT_UPGRADE_ITEM "Cannot upgrade item."
+    IDS_USER_NOT_ENOUGH_PAY "??? ?????."
+    IDS_USER_ONLY_USE_GUILD_MASTER "Only guild master can use."
+    IDS_USER_TEX_CONTROL    "?? ??? ???? ?? ???? 12???? ????? ????."
+    IDS_USER_CANT_USE_IN_DEFENCE "?????? ???? ????."
+    IDS_USER_TEX_MAX        "?? ?? ??? 30%???."
+    IDS_USER_INVALID_YEAR   "Year is invalid."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_USER_INVALID_MONTH  "Month is invalid."
+    IDS_USER_INVALID_DAY    "Day is invalid."
+    IDS_USER_INVALID_HOUR   "Hour is invalid."
+    IDS_USER_ALREADY_EXIST_SCHEDULE "Schedule already been set."
+    IDS_USER_GUILD_WAR_DELAY "??? ??? ?? 3??? ???."
+    IDS_USER_PASS_MIN_DAY   "?? 1?? ??? ???."
+    IDS_USER_INVALID_TIME   "?? ???? ?????."
+    IDS_USER_SCHEDULE_FIX   "??? ??? ??? ?? 12?? ?? ????? ???."
+    IDS_USER_EDIT_SCHEDULE_FAIL "Failed to change schedule."
+    IDS_USER_SCHEDULE_FIXED "%d? %d? %d? %d? ??? ??? ???????."
+    IDS_USER_GUILD_WAR_DELAY1 "??? ??? ?? 7??? ???."
+    IDS_USER_GUILD_WAR_DELAY2 "??? ???? ??? ??? ?? 2??? ???."
+    IDS_USER_FORTRESS_SCHEDULE_FIXED "%d? %d? %d? %d? ???? ??? ???????."
+    IDS_USER_START_GUILD_WAR "???? ?????."
+    IDS_USER_END_GUILD_WAR  "???? ?????."
+    IDS_USER_THIS_AREA_GUILD_HAVE "???? %s??? ??? ?????."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_USER_IN_ONE_SCREEN  "? ???? ??? ???."
+    IDS_USER_INVALID_MEMBER_COUNT "???? ??????."
+    IDS_USER_QUEST_TIME     "??? ??? 10????."
+    IDS_USER_CANT_REVIVE_IN_WAR "Cannot revive while in war."
+    IDS_USER_SYSTEM_MSG02   "%d? %d? %d? %d? \t : A = %s : C = %s : gap = %1.2f\r\n"
+    IDS_USER_SPEED_HACK     "You have been disconnected from the server due to either speedhack or network issues."
+    IDS_USER_NO_HANDYGATE   "You do not have a handygate."
+    IDS_USER_NO_HANDYGATE_AREA "Cannot use handygate in this area."
+    IDS_USER_ALREADY_HANDYGATE_SAVE "Already a location saved with that name."
+    IDS_USER_HANDYGATE_SAVE "Location saved to handigate."
+    IDS_USER_HANDYGATE_DELETE "Location removed from handigate."
+    IDS_USER_FIRST_REPAIR   "."
+    IDS_USER_NO_USER_ID     "???? ?? ?????."
+    IDS_USER_INVALID_USER_ID "??? ?? ??????."
+    IDS_USER_NO_COPYCHIP    "You don't have a copy chip."
+    IDS_USER_INVALID_AXIS   "??? ??? ???????."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_USER_REVIEW_THIS_AXIS "?? ??? ????????."
+    IDS_USER_CANT_USE_AREA  "??? ? ?? ?????."
+    IDS_USER_MOVE_FAIL      "????? ???????."
+    IDS_USER_WHO_MOVE_FAIL  "%s?? ??? ???????."
+    IDS_USER_CURRENT_USER_COUNT "Current user count is %d"
+    IDS_USER_NO_CHANGE_THIS "?? ???? ????."
+    IDS_USER_CHANGE_COMPLETED "?? ????."
+    IDS_USER_GET_FORTRESS_SUCCESS "%s ??? ????? ?? ?????."
+    IDS_USER_REG_ADDR_FAIL  "?? ??? ???????."
+    IDS_USER_MUNHWA_PRESENT "?????"
+    IDS_USER_DEPT_PRESENT   "??????"
+    IDS_USER_REG_ADDR       "??? ???????."
+    IDS_USER_SYSTEM_MSG03   "*** ???? : %d?, ?????[FL:FR]:%d:%d ***"
+    IDS_USER_SYSTEM_MSG04   "?? : %d?(%d,%d,%d,%d), ???[FL:FR]:%d:%d"
+    IDS_USER_NOT_GUILD_MASTER "?????? ????."
+    IDS_USER_UNCLEAR_FORTRESS "??? ?????? ??????."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_USER_NOT_APPLY_GUILD "???? ????? ????."
+    IDS_USER_UNKNOWN_ERROR  "?? ?? ????? ??? ???."
+    IDS_USER_NO_MORE_REPAIR "??? ??? ??? ????."
+    IDS_USER_FAIL           "???????."
+    IDS_USER_NOT_ENOUGH_REPAIR_DINA "????? ?????."
+    IDS_USER_NOT_ENOUGH_REPAIR_HAVEDINA "??? ????? ????? ?????."
+    IDS_USER_REPAIR_COMPLETED "???????."
+    IDS_USER_NO_PERMISSION_IN_WAR "??? ???? ??? ????."
+    IDS_USER_UNTIL_TODAY_YOUR_GAMETIME "???? ??? ????? ?? ??? ???????."
+    IDS_USER_REMAIN_ACCOUNT_USE "?? ????? %d? ?????."
+    IDS_USER_REMAIN_GAMETIME_MIN " ???? ????? %d? ?????."
+    IDS_USER_REMAIN_GAMEROOMTIME "???? ??? ????? ? %d?? %d? ?????."
+    IDS_USER_CANT_DRESSING_ITEM "Failed to process Ore."
+    IDS_USER_INVALID_DRESSING_COUNT "?????? ??? ??? ???????."
+    IDS_USER_DRESSING_COUNT_FORMAT "??? ?????? 10? ??? ????? ????."
+    IDS_USER_CANT_DRESSING  "?? ? ? ????."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_USER_DRESSING_NO_RESULT "????? ??? ???? ?????."
+    IDS_USER_DRESSING_RESULT "?? ?? : "
+    IDS_USER_DRESSING_FAIL  "Failed to process Ore."
+    IDS_USER_SAME_ITEM_COUNT_MAX "?? ???? 32767??? ??? ? ????."
+    IDS_USER_NOT_ENOUGH_PAY_FOR_OUT "?? ??? ??? ???? ?????."
+    IDS_USER_DAMAGED_ITEM   "???? ???? ??? ? ????. ???? ??????."
+    IDS_USER_NEED_EMPTY_SLOT_CHANGE "???? ?????? ??? ?????. ??? ??? ???."
+    IDS_USER_UNSTABLE_CONNECTION "Connection is Unstable."
+    IDS_USER_EVENT_COMMON_CURE "?????. ?????B 1000?? ??????."
+    IDS_USER_EVENT_ATT7_CHANGE "?????. 7? ??????? ???? ??????."
+    IDS_USER_EVENT_DEF7_CHANGE "?????. 7? ??????? ???? ??????."
+    IDS_USER_EVENT_ATT6_CHANGE "?????. 6? ??????? ???? ??????."
+    IDS_USER_EVENT_DEF6_CHANGE "?????. 6? ??????? ???? ??????."
+    IDS_USER_EVENT_ATT5_CHANGE "?????. 5? ??????? ???? ??????."
+    IDS_USER_EVENT_DEF5_CHANGE "?????. 5? ??????? ???? ??????."
+    IDS_USER_EVENT_RESET_STAT "?????. ??? ??? ???? ??????."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_USER_CHECK_INPUT_NUMBER "???? ??? ???? ????."
+    IDS_USER_NOT_SUBSCRIPTION "???? ???? ????."
+    IDS_USER_ONE_MORE_APPLY "?? ?? ???? ????."
+    IDS_USER_ALREADY_LOTTO  "??? ??? ?? ???????. ???? ????."
+    IDS_USER_CANCEL_LOTTO   "?? ??? ??? ???? ????. ???? ????."
+    IDS_USER_OVER_WEIGHT2   "?? ???? ??? ?????. ??? ??? ???."
+    IDS_USER_CHECK_LOTTO_NUMBER "???? ?? ??? ???? ????."
+    IDS_USER_CHECK_SOCIAL_NUMBER "???? ??? ???????. ???? ????."
+    IDS_USER_GUILD_STORE_SOON "%s ?? ???? %d?? ?????."
+    IDS_USER_DRAW           "Guild war ended in a draw."
+    IDS_USER_END_NO_APPLY_GUILD "%s? ????? ??? ?????."
+    IDS_USER_END_FIELD_STORE_WAR "?? ???? ?????."
+    IDS_USER_START_LUINET_SOON "罗尼特要塞战将在 %d 分钟后开始."
+    IDS_USER_START_SANAD_SOON "沙纳德要塞战将在 %d 分钟后开始."
+    IDS_USER_END_LUINET_SOON "罗尼特要塞战将在 %d 分钟后结束."
+    IDS_USER_END_SANAD_SOON "沙纳德要塞战将在 %d 分钟后结束."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_USER_END_LUINET_NO_APPLY "罗尼特要塞战已结束."
+    IDS_USER_END_SANAD_NO_APPLY "沙纳德要塞战已结束."
+    IDS_USER_START_LUINET   "罗尼特要塞战已开始."
+    IDS_USER_START_SANAD    "沙纳德要塞战已开始."
+    IDS_USER_END_FORTRESS   "要塞战已结束,  %s 已经赢得战争,并且拥有了要塞.."
+    IDS_USER_RIOT_LUINET    "???? ????? ??? ?? ????."
+    IDS_USER_RIOT_SANAD     "??? ????? ??? ?? ????."
+    IDS_USER_RIOT_LUINET_RETURN "???? ????? ???? ???? ?? ?????."
+    IDS_USER_RIOT_SANAD_RETURN "??? ????? ???? ???? ?? ?????."
+    IDS_USER_FAIL_EVENT_DATA "??? ?? ?? ??"
+    IDS_USER_SYSTEM_MSG05   "(%d? %d? %d? %d?)\tSid-%d iGuildID-%d tNum-%d sValue-%d sGuildLevel-%d iLevelTime-%d\r\n"
+    IDS_USER_QUEST_END      "??? ??! ? 10?? ??? ?????."
+    IDS_USER_SYSTEM_MSG06   "ERROR: LOGIN_SERVER PORT"
+    IDS_USER_SYSTEM_MSG07   "ERROR: LOGIN_SERVER_ADDRESS"
+    IDS_USER_SYSTEM_MSG08   "Login Server ? ?? ??? ????."
+    IDS_USER_FAIL_CHECK_INVEN "???????. ??? ???? ????."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_USER_ALREADY_REG_NUMBER "?? ??? ?????."
+    IDS_USER_YOUR_ACCOUNT_REG "?????. %s?? ??? ???????."
+    IDS_USER_FLOWER_PRESENT "??????"
+    IDS_EVENT_FLOWER        "?? %s??? ??? ???? ??????."
+    IDS_USER_ACCESSORI_INVALID "5???? ????? ??? ??, ???? ????? ?? ? ????."
+    IDS_USER_ACCESSORI_RIPEL "5???? ????? ????? ??? ??? ???? ??? ?????."
+    IDS_USER_ACCESSORI_CREST "?????? 5? ????? ????? ? ? ????."
+    IDS_USER_ACCESSORI_OLD  "??? ???? ????? ????? ? ? ????."
+    IDS_EVENT_LOTTO         "??? ??? ?????."
+    IDS_USER_CHANGE_UPGRADE_ACC_SUCCESS "???? ??? ???????."
+    IDS_USER_CHANGE_UPGRADE_ACC_FAIL "?? ??? ???? ???, ??? ????? ????."
+    IDS_USER_ACCESSORI_SKILLUP "? ????? ?????? ? ? ????."
+    IDS_USER_GUILD_SUBMASTER_ON "%s has been appointed as guild sub master."
+    IDS_USER_GUILD_SUBMASTER_OFF "%s has been deprived of guild sub master."
+    IDS_USER_GUILD_SUBMASTER "You have appointed %s as guild sub master."
+    IDS_USER_GUILD_SUBMASTER_NOT "?? ???? ???? ?? ????."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CANT_REMODELING     "?????? ????? ???, ??, ??? ???? ??? ? ????."
+    IDS_USER_START_ZAMELLYA_SOON "乍莫里要塞战将在 %d 分钟后开始."
+    IDS_USER_END_ZAMELLYA_SOON "乍莫里要塞战将在 %d 分钟后结束."
+    IDS_USER_END_ZAMELLYA_NO_APPLY "乍莫里要塞战已结束."
+    IDS_USER_START_ZAMELLYA "乍莫里要塞战已开始"
+    IDS_USER_RIOT_ZAMELLYA  "???? ????? ??? ?? ????."
+    IDS_USER_RIOT_ZAMELLYA_RETURN "???? ????? ???? ???? ?? ?????."
+    IDS_USER_ALREADY_ZAMELLYA_FORTRESS 
+                            "Cannot apply because you already own Jamalia fortress."
+    IDS_EVENT_END           "Event has ended."
+    IDS_MOON_SONGPEON_01    "?? ??? ?????. ??? 87 ? ?????."
+    IDS_MOON_SONGPEON_11    "? ??? ?????. ??? 654 ? ?????."
+    IDS_MOON_SONGPEON_31    "? ??? ?????. ??? 11185 ? ?????."
+    IDS_MOON_SONGPEON_51    "? ??? ?????. ??? 67550 ? ?????."
+    IDS_MOON_SONGPEON_71    "? ??? ?????. ??? 249960 ? ?????."
+    IDS_ANOTHER_PSI_RUN     "?? ?? ????? ??? ???."
+    IDS_INVENTORY_FULL      "Your inventory is full and does not have any space."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CANNOT_USE_BOX      "NEO A.R.K ??? ????? ??? ? ????."
+    IDS_RING_OF_LIFE        "You have been spared exp loss."
+    IDS_NEED_QUEST          "You need to complete a quest first."
+    IDS_PSI_ERROR_LEVEL     "You do not have the required level for this psyonic."
+    IDS_PSI_ERROR_CLASS     "This psyonic is not for your class."
+    IDS_PSI_ERROR_XP        "You do not have enough XP for this psyonic."
+    IDS_PSI_ERROR_EXIST     "You already have this psyonic."
+    IDS_MIND_SHOCK_SUCCESS  "??? ?? ????? ???????."
+    IDS_CANNOT_REVERSE      "?????? ?????? ??? ? ????."
+    IDS_XP_ERROR            "XP not enough."
+    IDS_HELPER_NOT_NEED_CURE 
+                            "You're already healthy. You dont't need to be healed."
+    IDS_HELPER_CURE_COMPLETED "Heal Complete."
+    IDS_HELPER_CURE_COMPLETED2 "Recovered HP, PP, SP."
+    IDS_HELPER_CURE_COMPLETED2_CLASS 
+                            "Recovered HP, PP, SP and refilled energy for %s."
+    IDS_USER_INVALID_SHOP_LOCATION 
+                            "Cannot setup a personal shop in this location."
+    IDS_USER_INVALID_SHOP_NAME 
+                            "Personal shop name is invalid. A personal shop name must be no more than 13 characters."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_USER_INVALID_SHOP_ITEMCOUNT 
+                            "Failed to create Personal shop. Due to item count in personal shop being different from User's item count."
+    IDS_USER_INVALID_SHOP_ITEMAMOUNT 
+                            "Failed to create Personal shop. Due to too many items being added to shop."
+    IDS_USER_INVALID_SHOP_BEINGVIEWED 
+                            "Another player is already looking at this personal shop."
+    IDS_USER_SHOP_NOTENOUGH_DINA 
+                            "Not enough Dina to buy items from personal shop."
+    IDS_USER_SHOP_NOTENOUGH_WEIGHT 
+                            "Not enough weight to buy items from personal shop."
+    IDS_USER_SHOP_NO_IVEN_SLOT 
+                            "Not enough inventory shops to buy items from personal shop."
+    IDS_USER_SHOP_BUY_SUCCESS "Successfully brought %s from personal shop."
+    IDS_USER_SHOP_BUY_FAIL  "Failed to buy %s from personal shop."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Server.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Server.ico"
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Server MFC 媵堠 ?铩挢锌\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Server\0"
+            VALUE "LegalCopyright", "Copyright (C) 2000\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Server.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Server 媵堠 ?铩挢锌\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_SERVER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 245
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 167
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SERVER_DIALOG DIALOGEX 0, 0, 253, 174
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Droiyan Online Server Ver 0.1 - Current User : 0"
+FONT 9, "狱", 0, 0, 0x1
+BEGIN
+    LTEXT           "Index:",IDC_INDEX,7,7,77,13,SS_CENTERIMAGE,
+                    WS_EX_CLIENTEDGE
+    LTEXT           "Port:",IDC_PORT,85,7,78,13,SS_CENTERIMAGE,
+                    WS_EX_CLIENTEDGE
+    LTEXT           "Client Ver:",IDC_CLIENT_VER,164,7,78,13,SS_CENTERIMAGE,
+                    WS_EX_CLIENTEDGE
+    LTEXT           "Zone:",IDC_ZONE,7,21,238,13,SS_CENTERIMAGE,
+                    WS_EX_CLIENTEDGE
+    LTEXT           "Notice:",IDC_STATIC,7,35,23,13,SS_CENTERIMAGE,
+                    WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_EDIT_ANNOUNCE,29,35,216,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT,7,49,238,93,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL | WS_HSCROLL | NOT WS_TABSTOP
+    DEFPUSHBUTTON   "Renew",IDC_REFRESH,54,147,61,17
+    PUSHBUTTON      "Notice Renew",IDC_NEW_ANNOUNCE,118,147,61,17
+    PUSHBUTTON      "Exit",IDCANCEL,184,147,61,17
+END
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Server 斯斐"
+FONT 9, "狱"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Server ?? 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2000",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "?黻",IDOK,178,7,50,14,WS_GROUP
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\Server.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

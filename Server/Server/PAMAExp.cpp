@@ -1,0 +1,27 @@
+// PAMAExp.cpp: implementation of the CPAMAExp class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "stdafx.h"
+#include "server.h"
+#include "PAMAExp.h"
+
+#ifdef _DEBUG
+#undef THIS_FILE
+static char THIS_FILE[]=__FILE__;
+#define new DEBUG_NEW
+#endif
+
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+
+CPAMAExp::CPAMAExp()
+{
+
+}
+
+CPAMAExp::~CPAMAExp()
+{
+
+}

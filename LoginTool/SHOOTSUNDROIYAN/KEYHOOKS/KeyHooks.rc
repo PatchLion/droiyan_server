@@ -1,0 +1,815 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\KeyHooks.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN_CONFIG DIALOGEX 0, 0, 272, 175
+STYLE DS_MODALFRAME | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "决战内挂"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    LTEXT           "",IDC_MAIN_PAGE,4,29,266,141
+    CONTROL         "Tab1",IDC_MAIN_TAB,"SysTabControl32",TCS_MULTILINE | 
+                    WS_TABSTOP,0,1,272,173,WS_EX_STATICEDGE
+END
+
+IDD_CONFIG9_4 DIALOG DISCARDABLE  0, 0, 186, 133
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "统计",IDC_BUTTON_PLAY_INFO,145,119,40,13,WS_DISABLED
+    EDITTEXT        IDC_EDIT_9_3_1,0,1,186,116,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_READONLY | WS_VSCROLL
+    PUSHBUTTON      "清出",IDC_BUTTON_CLEAR_INFO,104,119,40,13,WS_DISABLED
+END
+
+IDD_CONFIG9_3 DIALOG DISCARDABLE  0, 0, 186, 133
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "普通",IDC_CHECK_9_4_1,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,39,11,29,10
+    CONTROL         "密语",IDC_CHECK_9_4_2,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,70,11,29,10
+    CONTROL         "同盟",IDC_CHECK_9_4_4,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,100,11,29,10
+    CONTROL         "军团",IDC_CHECK_9_4_5,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,131,11,29,10
+    CONTROL         "系统",IDC_CHECK_9_4_3,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,8,11,29,10
+    GROUPBOX        "信息过滤",IDC_STATIC,1,1,183,25,WS_DISABLED
+    GROUPBOX        "记录",IDC_STATIC,2,28,183,27
+    CONTROL         "记录死亡时间",IDC_CHECK_9_4_6,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,8,40,66,10
+END
+
+IDD_CONFIG9_2 DIALOGEX 0, 0, 186, 138
+STYLE WS_CHILD
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_LIST_9_2_1,"SysListView32",LVS_REPORT | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,1,46,184,76
+    COMBOBOX        IDC_COMBO9_2_1,43,124,97,106,CBS_DROPDOWN | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "显示",IDC_BUTTON_PLAYER_INFO,145,124,40,13
+    CTEXT           "玩家信息",IDC_STATIC,3,126,36,8
+    CTEXT           "",IDC_STATIC_INFO1,39,14,66,9,0,WS_EX_STATICEDGE
+    GROUPBOX        "玩家信息/攻击对象",IDC_STATIC,0,0,185,44
+    CTEXT           "位置",IDC_ME_NOW_STATIC2,1,14,21,8
+    CTEXT           "",IDC_STATIC_INFO2,132,14,48,9,0,WS_EX_STATICEDGE
+    CTEXT           "坐标",IDC_ME_NOW_STATIC4,105,14,21,8
+    LTEXT           "攻击目标",IDC_STATIC,4,30,32,8,0,WS_EX_TRANSPARENT
+    CTEXT           "",IDC_STATIC_INFO3,39,28,66,9,0,WS_EX_STATICEDGE
+    CTEXT           "",IDC_STATIC_INFO4,132,28,48,9,0,WS_EX_STATICEDGE
+    CTEXT           "坐标",IDC_ME_NOW_STATIC7,105,30,21,8
+END
+
+IDD_CONFIG9_1 DIALOG DISCARDABLE  0, 0, 187, 137
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "物品",IDC_CHECK_9_1_1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,3,93,30,14
+    CONTROL         "NPC",IDC_CHECK_9_1_2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,37,93,27,14
+    CONTROL         "玩家",IDC_CHECK_9_1_3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,65,93,30,14
+    CONTROL         "生命超过",IDC_CHECK_9_1_5,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,3,123,46,9
+    EDITTEXT        IDC_EDIT_9_1_1,52,121,30,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "怪物",IDC_CHECK_9_1_4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,97,93,30,14
+    LTEXT           "报告",IDC_STATIC,85,123,17,8
+    LTEXT           "提示字体",IDC_STATIC,105,124,34,8
+    COMBOBOX        IDC_COMBO_9_1_1,139,121,41,73,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "怪物报告",IDC_STATIC,0,113,186,24
+    GROUPBOX        "信息",IDC_STATIC,0,86,186,24
+    CONTROL         "List1",IDC_LIST_9_1_1,"SysListView32",LVS_REPORT | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,0,2,186,83
+END
+
+IDD_CONFIG9 DIALOG DISCARDABLE  0, 0, 190, 150
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "游戏信息",IDC_RADIO_9_1,"Button",BS_AUTORADIOBUTTON,2,2,
+                    46,9
+    CONTROL         "玩家装备",IDC_RADIO_9_2,"Button",BS_AUTORADIOBUTTON,49,
+                    2,45,9
+    CONTROL         "系统信息",IDC_RADIO_9_3,"Button",BS_AUTORADIOBUTTON | 
+                    NOT WS_VISIBLE | WS_DISABLED,98,2,44,9
+    CONTROL         "统计信息",IDC_RADIO_9_4,"Button",BS_AUTORADIOBUTTON | 
+                    NOT WS_VISIBLE | WS_DISABLED,145,2,44,9
+    LTEXT           "",IDC_9_PAGE,2,12,187,137
+END
+
+IDD_CONFIG8_3 DIALOG DISCARDABLE  0, 0, 190, 137
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "购买药品",IDC_CHECK_AUTO_DO_4,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_TABSTOP,142,15,43,9
+    CONTROL         "银行取放",IDC_CHECK_AUTO_DO_3,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_TABSTOP,96,15,43,9
+    CONTROL         "修理装备",IDC_CHECK_AUTO_DO_1,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_TABSTOP,50,15,43,9
+    CONTROL         "卖掉装备",IDC_CHECK_AUTO_DO_2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,4,15,43,9
+    CONTROL         "白",IDC_NOVELITY_0,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,4,38,23,9
+    CONTROL         "粉",IDC_NOVELITY_1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,31,38,23,9
+    CONTROL         "黄",IDC_NOVELITY_3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,84,38,23,9
+    CONTROL         "蓝",IDC_NOVELITY_2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,58,38,23,9
+    LTEXT           "随身物品操作",IDC_STATIC,4,4,53,8
+    LTEXT           "拾取物品操作",IDC_STATIC,4,27,53,8
+    LTEXT           "银行物品操作",IDC_STATIC,4,49,53,8
+    CONTROL         "自动存入矿石",IDC_CHECK_BANK_0,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,4,59,63,9
+    CONTROL         "自动存入装备(保留 或 颜色)",IDC_CHECK_BANK_1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,4,70,119,9
+    LTEXT           "启动操作",IDC_STATIC,4,82,53,8
+    CONTROL         "自动打开传送门",IDC_CHECK_AUTO_OPEN_DOOR,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,4,93,119,9
+END
+
+IDD_CONFIG8_2 DIALOG DISCARDABLE  0, 0, 190, 137
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "回城保护(百分比)",IDC_STATIC,2,102,64,8
+    EDITTEXT        IDC_EDIT_OTHER_6,69,100,21,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "生命药(买)<",IDC_STATIC,2,21,45,8
+    EDITTEXT        IDC_EDIT_OTHER_1,69,20,21,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "魔法药(取)<",IDC_STATIC,2,37,45,8
+    EDITTEXT        IDC_EDIT_OTHER_2,69,35,21,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "耗秒额外补血",IDC_STATIC,2,60,49,8
+    EDITTEXT        IDC_EDIT_OTHER_3,69,58,21,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "临时地点时间(秒)",IDC_STATIC,2,74,65,8
+    EDITTEXT        IDC_EDIT_OTHER_4,69,72,21,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "物品停留时间(秒)",IDC_STATIC,2,88,65,8
+    EDITTEXT        IDC_EDIT_OTHER_5,69,86,21,12,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "设置数量",IDC_BUTTON_8_2_1,69,3,58,13
+    COMBOBOX        IDC_COMBO_8_1_1,117,19,33,73,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "首选",IDC_STATIC,94,22,17,8
+    COMBOBOX        IDC_COMBO_8_1_2,117,34,33,73,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "首选",IDC_STATIC,94,37,17,8
+    CONTROL         "回城",IDC_CHECK_8_1,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,154,19,32,12
+    CONTROL         "回城",IDC_CHECK_8_2,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,154,35,32,12
+    LTEXT           "决战币控制(携带)",IDC_STATIC,2,125,64,8
+    EDITTEXT        IDC_EDIT_OTHER_7,69,123,56,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "控制决战币",IDC_CHECK_AUTO_MONEY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,69,113,56,9
+END
+
+IDD_CONFIG8_1 DIALOG DISCARDABLE  0, 0, 190, 137
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "生命药",IDC_STATIC,6,21,25,8
+    EDITTEXT        IDC_EDIT_8_1_1,47,20,21,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "魔法药",IDC_STATIC,6,35,25,8
+    LTEXT           "体力药",IDC_STATIC,6,49,25,8
+    LTEXT           "常用药",IDC_STATIC,6,64,25,8
+    LTEXT           "解毒药",IDC_STATIC,6,93,25,8
+    LTEXT           "镇定药",IDC_STATIC,71,93,25,8
+    LTEXT           "麻醉治疗",IDC_STATIC,6,108,33,8
+    LTEXT           "常用治疗",IDC_STATIC,71,108,33,8
+    LTEXT           "视力恢复",IDC_STATIC,6,124,33,8
+    LTEXT           "闪避药",IDC_STATIC,6,78,25,8
+    LTEXT           "时空药",IDC_STATIC,71,79,25,8
+    LTEXT           "神之泪",IDC_STATIC,128,79,25,8
+    CTEXT           "A",IDC_STATIC,35,21,8,8
+    EDITTEXT        IDC_EDIT_8_1_2,83,20,21,12,ES_AUTOHSCROLL | ES_NUMBER
+    CTEXT           "B",IDC_STATIC,71,21,8,8
+    EDITTEXT        IDC_EDIT_8_1_3,119,20,21,12,ES_AUTOHSCROLL | ES_NUMBER
+    CTEXT           "C",IDC_STATIC,107,22,8,8
+    EDITTEXT        IDC_EDIT_8_1_4,155,20,21,12,ES_AUTOHSCROLL | ES_NUMBER
+    CTEXT           "D",IDC_STATIC,143,22,8,8
+    EDITTEXT        IDC_EDIT_8_1_5,47,34,21,12,ES_AUTOHSCROLL | ES_NUMBER
+    CTEXT           "A",IDC_STATIC,35,36,8,8
+    EDITTEXT        IDC_EDIT_8_1_6,83,34,21,12,ES_AUTOHSCROLL | ES_NUMBER
+    CTEXT           "B",IDC_STATIC,71,36,8,8
+    EDITTEXT        IDC_EDIT_8_1_7,119,34,21,12,ES_AUTOHSCROLL | ES_NUMBER
+    CTEXT           "C",IDC_STATIC,107,36,8,8
+    EDITTEXT        IDC_EDIT_8_1_8,155,34,21,12,ES_AUTOHSCROLL | ES_NUMBER
+    CTEXT           "D",IDC_STATIC,143,36,8,8
+    EDITTEXT        IDC_EDIT_8_1_9,47,48,21,12,ES_AUTOHSCROLL | ES_NUMBER
+    CTEXT           "A",IDC_STATIC,35,50,8,8
+    EDITTEXT        IDC_EDIT_8_1_10,83,48,21,12,ES_AUTOHSCROLL | ES_NUMBER
+    CTEXT           "B",IDC_STATIC,71,50,8,8
+    EDITTEXT        IDC_EDIT_8_1_11,119,48,21,12,ES_AUTOHSCROLL | ES_NUMBER
+    CTEXT           "C",IDC_STATIC,107,50,8,8
+    EDITTEXT        IDC_EDIT_8_1_12,47,62,21,12,ES_AUTOHSCROLL | ES_NUMBER
+    CTEXT           "A",IDC_STATIC,35,64,8,8
+    EDITTEXT        IDC_EDIT_8_1_13,83,62,21,12,ES_AUTOHSCROLL | ES_NUMBER
+    CTEXT           "B",IDC_STATIC,71,64,8,8
+    EDITTEXT        IDC_EDIT_8_1_14,47,77,21,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_8_1_15,102,77,21,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_8_1_16,155,77,21,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_8_1_17,47,91,21,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_8_1_18,102,91,21,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_8_1_19,47,106,21,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_8_1_20,102,106,21,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_8_1_21,47,121,21,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "能量药",IDC_STATIC,71,124,25,8
+    EDITTEXT        IDC_EDIT_8_1_22,102,121,21,12,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "设置数量",IDC_BUTTON_8_1_1,47,4,58,13
+END
+
+IDD_CONFIG8 DIALOG DISCARDABLE  0, 0, 190, 150
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "",IDC_8_PAGE,0,12,189,137
+    CONTROL         "药品数值",IDC_RADIO_8_1,"Button",BS_AUTORADIOBUTTON,1,1,
+                    50,10
+    CONTROL         "详细数值",IDC_RADIO_8_2,"Button",BS_AUTORADIOBUTTON,54,
+                    1,50,10
+    CONTROL         "详细设置",IDC_RADIO_8_3,"Button",BS_AUTORADIOBUTTON,108,
+                    1,50,10
+END
+
+IDD_CONFIG7 DIALOG DISCARDABLE  0, 0, 190, 150
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "买药",IDC_BUTTON_AUTODRUG,74,7,20,14
+    PUSHBUTTON      "修卖",IDC_BUTTON_AUTOWEAPON,28,7,20,14
+    PUSHBUTTON      "银行",IDC_BUTTON_AUTOBANK,51,7,20,14
+    PUSHBUTTON      "所有",IDC_BUTTON_AUTOALL,5,7,20,14
+    GROUPBOX        "",IDC_STATIC,1,0,188,25
+    PUSHBUTTON      "退到桌面",IDC_BUTTON_7_1,5,31,43,14
+    PUSHBUTTON      "强制退出",IDC_BUTTON_7_2,51,31,43,14
+END
+
+IDD_CONFIG6_2 DIALOG DISCARDABLE  0, 0, 190, 137
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "寻怪算法",IDC_STATIC,3,4,43,8
+    CONTROL         "寻找最近点怪",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,3,14,64,9
+    CONTROL         "防止抢怪",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,3,25,64,9
+    CONTROL         "防止被围",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,3,36,64,9
+    CONTROL         "网络地图寻路",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,90,25,93,9
+    CONTROL         "映像地图寻路",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,90,36,93,9
+    PUSHBUTTON      "选择地图",IDC_BUTTON2,90,48,45,11
+    LTEXT           "移动速度",IDC_STATIC,3,63,43,8
+    CONTROL         "Slider1",IDC_SLIDER_GAME_SPEED,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,47,74,34,12
+    LTEXT           "跑步速度",IDC_STATIC,9,75,37,9
+    CONTROL         "Slider1",IDC_SLIDER_GAME_SPEED2,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,47,87,34,12
+    LTEXT           "瞬移速度",IDC_STATIC,9,88,37,9
+END
+
+IDD_CONFIG6_1 DIALOG DISCARDABLE  0, 0, 190, 137
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    COMBOBOX        IDC_COMBO_6_1_1,0,98,82,73,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "+",IDC_BUTTON_6_1_ADD,125,98,16,13
+    PUSHBUTTON      "-",IDC_BUTTON_6_1_SUB,143,98,16,13
+    CONTROL         "List1",IDC_LIST_6_1_1,"SysListView32",LVS_REPORT | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,0,1,187,94
+    LTEXT           "时间",IDC_STATIC,23,119,17,8
+    EDITTEXT        IDC_EDIT_AUTO_TIME,41,118,26,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "危险",IDC_STATIC,137,119,17,8
+    COMBOBOX        IDC_COMBO_6_1_2,157,117,27,73,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "启动",IDC_CHECK_START_AUTOPLAY,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,161,98,26,13
+    GROUPBOX        "",IDC_STATIC,0,109,188,25
+    CTEXT           "",IDC_TIME_INFO,4,120,18,8
+    EDITTEXT        IDC_SITEXY_EDIT,92,118,41,12,ES_AUTOHSCROLL
+    LTEXT           "范围",IDC_STATIC,70,120,17,8
+    PUSHBUTTON      "传送",IDC_BUTTON_GOTO_SITE,85,98,18,13
+    PUSHBUTTON      "刷新",IDC_BUTTON_OPEN_DOOR,105,98,18,13
+END
+
+IDD_CONFIG6 DIALOG DISCARDABLE  0, 0, 190, 150
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "练功地点",IDC_RADIO_6_1,"Button",BS_AUTORADIOBUTTON,1,2,
+                    47,10
+    CONTROL         "练功设置",IDC_RADIO_6_2,"Button",BS_AUTORADIOBUTTON,54,
+                    2,46,10
+    LTEXT           "",IDC_6_PAGE,0,12,188,137,NOT WS_GROUP
+END
+
+IDD_CONFIG5_3 DIALOG DISCARDABLE  0, 0, 190, 137
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "生命",IDC_CHECK_SPELL_1,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,3,9,21,12
+    CONTROL         "疾风",IDC_CHECK_SPELL_3,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,47,9,21,12
+    CONTROL         "穿刺",IDC_CHECK_SPELL_6,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,113,9,21,12
+    CONTROL         "加速",IDC_CHECK_SPELL_2,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,25,9,21,12
+    CONTROL         "护盾",IDC_CHECK_SPELL_4,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,69,9,21,11
+    CONTROL         "狂暴",IDC_CHECK_SPELL_5,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,91,9,21,12
+    CONTROL         "强化",IDC_CHECK_SPELL_11,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,47,22,21,12
+    CONTROL         "传送",IDC_CHECK_SPELL_7,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,135,9,21,12
+    CONTROL         "神行",IDC_CHECK_SPELL_12,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,69,22,21,12
+    CONTROL         "魔盾",IDC_CHECK_SPELL_10,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,25,22,21,12
+    CONTROL         "守护",IDC_CHECK_SPELL_9,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,3,22,21,12
+    CONTROL         "防护",IDC_CHECK_SPELL_8,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,157,9,21,12
+    CONTROL         "超防",IDC_CHECK_SPELL_15,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,135,22,21,12
+    GROUPBOX        "魔法请求",IDC_STATIC,0,0,189,38
+END
+
+IDD_CONFIG5_2 DIALOG DISCARDABLE  0, 0, 190, 137
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+END
+
+IDD_CONFIG5_1 DIALOG DISCARDABLE  0, 0, 190, 137
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    COMBOBOX        IDC_COMBO_5_1_2,43,110,109,73,CBS_DROPDOWN | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "+",IDC_BUTTON_5_1_ADD,154,110,16,13
+    PUSHBUTTON      "-",IDC_BUTTON_5_1_SUB,172,110,16,13
+    CONTROL         "List1",IDC_LIST_5_1_1,"SysListView32",LVS_REPORT | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,0,3,188,104
+    COMBOBOX        IDC_COMBO_5_1_1,0,110,39,73,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "自动组队",IDC_CHECK_AUTO_TEAM,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,43,125,48,10
+END
+
+IDD_CONFIG5 DIALOG DISCARDABLE  0, 0, 190, 150
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "组队",IDC_RADIO_5_1,"Button",BS_AUTORADIOBUTTON,1,2,34,
+                    10
+    CONTROL         "PK",IDC_RADIO_5_2,"Button",BS_AUTORADIOBUTTON | NOT 
+                    WS_VISIBLE,38,2,27,10
+    CONTROL         "辅助",IDC_RADIO_5_3,"Button",BS_AUTORADIOBUTTON | NOT 
+                    WS_VISIBLE,69,2,34,10
+    LTEXT           "",IDC_5_PAGE,0,12,189,137,NOT WS_GROUP
+END
+
+IDD_CONFIG4_4 DIALOG DISCARDABLE  0, 0, 190, 137
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    GROUPBOX        "制作",IDC_STATIC,0,0,189,70
+    COMBOBOX        IDC_COMBO1_1,31,10,76,73,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "物品",IDC_STATIC,5,13,22,7,SS_CENTERIMAGE
+    LTEXT           "数量",IDC_STATIC,5,27,22,7,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT1,31,26,37,11,ES_AUTOHSCROLL
+    LTEXT           "等级",IDC_STATIC,5,41,22,7,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT3,31,39,37,11,ES_AUTOHSCROLL
+    PUSHBUTTON      "制作",IDC_BUTTON1,31,54,38,12
+END
+
+IDD_CONFIG4_3 DIALOG DISCARDABLE  0, 0, 190, 137
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST_4_3_1,"SysListView32",LVS_REPORT | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,1,0,188,108
+    COMBOBOX        IDC_COMBO_4_3_1,26,119,56,73,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "状态",IDC_STATIC,6,122,18,9
+    LTEXT           "数量",IDC_STATIC,85,122,17,8
+    EDITTEXT        IDC_EDIT_4_3_1,105,119,20,13,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "选择",IDC_STATIC,0,109,189,27
+    CONTROL         "开设商店",IDC_CHECK_START_SHOP,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,129,119,56,13
+END
+
+IDD_CONFIG4_2 DIALOG DISCARDABLE  0, 0, 190, 137
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    COMBOBOX        IDC_COMBO_4_2_1,8,103,86,73,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "+",IDC_BUTTON_4_2_ADD,150,103,16,13
+    PUSHBUTTON      "-",IDC_BUTTON_4_2_SUB,168,103,16,13
+    COMBOBOX        IDC_COMBO_4_2_2,97,103,50,73,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "物品选择",IDC_STATIC,1,93,188,28
+    EDITTEXT        IDC_EDIT_AUTO_SELL_SCORE,35,124,22,12,ES_AUTOHSCROLL
+    LTEXT           "分数的装备自动卖掉",IDC_STATIC,60,126,73,8
+    CONTROL         "低于",IDC_CHECK_AUTO_SELL_SCORE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,3,125,29,9
+    CONTROL         "List1",IDC_LIST_4_2_1,"SysListView32",LVS_REPORT | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,0,0,189,92
+END
+
+IDD_CONFIG4_1 DIALOG DISCARDABLE  0, 0, 190, 137
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST_4_1_1,"SysListView32",LVS_REPORT | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,1,0,188,122
+    COMBOBOX        IDC_COMBO_4_1_1,132,124,57,73,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_CONFIG4 DIALOG DISCARDABLE  0, 0, 190, 150
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "",IDC_4_PAGE,0,12,188,137,NOT WS_GROUP
+    CONTROL         "查看",IDC_RADIO_4_1,"Button",BS_AUTORADIOBUTTON,1,1,28,
+                    10
+    CONTROL         "过滤",IDC_RADIO_4_2,"Button",BS_AUTORADIOBUTTON,33,1,30,
+                    10
+    CONTROL         "商店",IDC_RADIO_4_3,"Button",BS_AUTORADIOBUTTON | NOT 
+                    WS_VISIBLE,68,1,30,10
+    CONTROL         "制作",IDC_RADIO_4_4,"Button",BS_AUTORADIOBUTTON | NOT 
+                    WS_VISIBLE,102,1,30,10
+END
+
+IDD_CONFIG3_2 DIALOG DISCARDABLE  0, 0, 190, 137
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "",IDC_SPEAK_STATIC,0,0,189,98
+    EDITTEXT        IDC_EDIT1,1,103,187,11,ES_AUTOHSCROLL
+END
+
+IDD_CONFIG3_1 DIALOG DISCARDABLE  0, 0, 190, 137
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT_SPEAK,0,0,189,68,ES_MULTILINE | ES_WANTRETURN
+    CONTROL         "PK后死亡",IDC_CHECK_AUTO_SPEAK_PK,"Button",
+                    BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_DISABLED | 
+                    WS_TABSTOP,1,124,45,10
+    EDITTEXT        IDC_EDIT_SPEAK_PK,54,123,135,12,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    EDITTEXT        IDC_EDIT_SPEAK_TIMER,168,109,21,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "自动发言",IDC_CHECK_AUTO_SPEAK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,1,111,50,9
+    LTEXT           "间隔时间",IDC_STATIC,134,111,32,8
+    CONTROL         "普通",IDC_RADIO_SPEAK_MODE_1,"Button",
+                    BS_AUTORADIOBUTTON,66,111,30,9
+    CONTROL         "呐喊",IDC_RADIO_SPEAK_MODE_2,"Button",
+                    BS_AUTORADIOBUTTON,100,111,30,9
+    LTEXT           "决战限制最多输入50字母或25个汉字，时间间隔为固定5秒",
+                    IDC_STATIC,9,76,176,18
+END
+
+IDD_CONFIG3 DIALOG DISCARDABLE  0, 0, 190, 150
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "自动发言",IDC_RADIO_3_1,"Button",BS_AUTORADIOBUTTON,1,1,
+                    48,10
+    CONTROL         "手动发言",IDC_RADIO_3_2,"Button",BS_AUTORADIOBUTTON | 
+                    NOT WS_VISIBLE,53,1,47,10
+    LTEXT           "",IDC_3_PAGE,0,12,188,137,NOT WS_GROUP
+END
+
+IDD_CONFIG2 DIALOG DISCARDABLE  0, 0, 190, 150
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    COMBOBOX        IDC_COMBO1_1,26,21,76,73,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO1_2,26,37,75,73,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO1_3,26,54,75,73,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO2_1,103,21,76,73,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO2_2,103,37,76,73,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO2_3,103,54,76,73,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "银行",IDC_STATIC,5,24,18,8,WS_TABSTOP
+    LTEXT           "医院",IDC_STATIC,5,40,18,8,WS_TABSTOP
+    LTEXT           "武器",IDC_STATIC,5,57,18,8,WS_TABSTOP
+    LTEXT           "伊卡路斯星",IDC_STATIC,25,10,45,8,WS_TABSTOP
+    LTEXT           "菲利普行星",IDC_STATIC,104,10,45,8,WS_TABSTOP
+    GROUPBOX        "地点选择",IDC_STATIC,0,0,190,71
+    EDITTEXT        IDC_EDIT_X,26,83,44,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "X:",IDC_STATIC,16,85,9,8,WS_TABSTOP
+    EDITTEXT        IDC_EDIT_Y,87,83,44,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Y:",IDC_STATIC,76,85,9,8,WS_TABSTOP
+    PUSHBUTTON      "移动",IDC_BUTTON_GOTO,135,83,43,12
+    CONTROL         "自动保存已知地点到传送门",IDC_CHECK_AUTO_SAVE_SITE1,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,2,138,111,11
+    CONTROL         "死亡后记录地点",IDC_CHECK_AUTO_SAVE_SITE2,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,116,139,70,10
+    PUSHBUTTON      "罗尼特",IDC_BUTTON_GOTO_1,26,105,29,13
+    PUSHBUTTON      "沙那德",IDC_BUTTON_GOTO_2,57,105,29,13
+    PUSHBUTTON      "乍莫里",IDC_BUTTON_GOTO_3,88,105,29,13
+    PUSHBUTTON      "沙洞窟",IDC_BUTTON_GOTO_4,119,105,29,13
+    PUSHBUTTON      "草城堡",IDC_BUTTON_GOTO_5,150,105,29,13
+    PUSHBUTTON      "A.R.K",IDC_BUTTON_GOTO_6,26,120,29,13
+    PUSHBUTTON      "非利普",IDC_BUTTON_GOTO_7,57,120,29,13
+    PUSHBUTTON      "废电所",IDC_BUTTON_GOTO_8,88,120,29,13
+    GROUPBOX        "",IDC_STATIC,0,97,189,39
+    GROUPBOX        "移动目标",IDC_STATIC,0,71,190,28
+    LTEXT           "地点",IDC_STATIC,6,107,18,8,WS_TABSTOP
+END
+
+IDD_CONFIG1 DIALOG DISCARDABLE  0, 0, 265, 195
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "补充生命",IDC_CHECK_BLOOD,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,5,10,43,10
+    CONTROL         "自动拾物",IDC_CHECK_AUTO_NOVELITY,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,160,10,46,10
+    CONTROL         "自动反击",IDC_CHECK_AUTO_COUTERATTACK,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,211,24,46,10
+    CONTROL         "血量信息",IDC_CHECK_BLOOD_INFO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,99,147,46,10
+    CONTROL         "显示拾取",IDC_CHECK_CTRL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,50,147,46,10
+    CONTROL         "自动必杀",IDC_CHECK_AUTO_MAX_KILL,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,160,37,46,10
+    CONTROL         "补充魔法",IDC_CHECK_AUTO_SPELL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,92,10,46,10
+    CONTROL         "自动捡钱",IDC_CHECK_AUTO_MONEY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,211,10,46,10
+    CONTROL         "补充体力",IDC_CHECK_PHYSICAL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,92,38,46,10
+    CONTROL         "补充能量",IDC_CHECK_ENERGY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,92,24,46,10
+    CONTROL         "锁定目标",IDC_CHECK_LOCK_TARGET,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,160,24,46,10
+    CONTROL         "回城保护",IDC_CHECK_BACK_CASTLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,211,38,46,10
+    CONTROL         "法师穿墙",IDC_CHECK_AUTO_OVER,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_DISABLED | WS_TABSTOP,206,145,46,10
+    CONTROL         "游戏信息",IDC_CHECK_GAME_INFO,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_DISABLED | WS_TABSTOP,147,147,46,10
+    CONTROL         "A",IDC_RADIO_BLOOD_A,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,53,10,24,11
+    CONTROL         "B",IDC_RADIO_BLOOD_B,"Button",BS_AUTORADIOBUTTON,53,21,
+                    24,11
+    CONTROL         "C",IDC_RADIO_BLOOD_C,"Button",BS_AUTORADIOBUTTON,53,32,
+                    24,11
+    CONTROL         "D",IDC_RADIO_BLOOD_D,"Button",BS_AUTORADIOBUTTON,53,42,
+                    24,11
+    CONTROL         "补满",IDC_RADIO_BLOOD_FULL,"Button",BS_AUTORADIOBUTTON | 
+                    NOT WS_VISIBLE | WS_DISABLED | WS_GROUP,193,146,30,11
+    CONTROL         "一般",IDC_RADIO_BLOOD_COMMON,"Button",
+                    BS_AUTORADIOBUTTON,9,21,29,11
+    CONTROL         "增强",IDC_RADIO_BLOOD_BEST,"Button",BS_AUTORADIOBUTTON | 
+                    NOT WS_VISIBLE | WS_DISABLED,205,179,27,11
+    CONTROL         "PK",IDC_RADIO_BLOOD_PK,"Button",BS_AUTORADIOBUTTON,9,31,
+                    27,11
+    CONTROL         "伴随攻击",IDC_WITH_AUTO_AGGRESSIVE,"Button",
+                    BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_DISABLED | 
+                    WS_TABSTOP,3,159,46,10
+    CONTROL         "额外加血",IDC_CHECK_OTHER_ADD_BLOOD,"Button",
+                    BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_DISABLED | 
+                    WS_TABSTOP,49,159,46,10
+    CONTROL         "生命",IDC_CHECK_SPELL_1,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,120,74,21,12
+    CONTROL         "疾风",IDC_CHECK_SPELL_3,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,94,74,21,12
+    CONTROL         "穿刺",IDC_CHECK_SPELL_6,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,145,74,21,12
+    CONTROL         "加速",IDC_CHECK_SPELL_2,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,192,105,21,12
+    CONTROL         "护盾",IDC_CHECK_SPELL_4,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,56,91,21,11
+    CONTROL         "狂暴",IDC_CHECK_SPELL_5,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,6,91,21,12
+    CONTROL         "强化",IDC_CHECK_SPELL_11,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,31,91,21,12
+    CONTROL         "阳光登陆器内挂",IDC_CHECK_SPELL_7,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_FLAT,48,129,161,12
+    CONTROL         "神行",IDC_CHECK_SPELL_12,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,223,105,21,12
+    CONTROL         "魔盾",IDC_CHECK_SPELL_10,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,120,105,21,12
+    CONTROL         "守护",IDC_CHECK_SPELL_9,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,233,74,21,12
+    CONTROL         "小圈",IDC_CHECK_SPELL_8,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,182,74,21,12
+    GROUPBOX        "魔法项目",IDC_STATIC,0,56,263,70
+    COMBOBOX        IDC_COMBO_CONFIG1_1,5,129,16,12,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | NOT WS_VISIBLE | WS_DISABLED | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "攻击模式",IDC_STATIC,125,186,33,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    COMBOBOX        IDC_COMBO_CONFIG1_2,5,128,16,12,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | NOT WS_VISIBLE | WS_DISABLED | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "伴随模式",IDC_STATIC,155,187,33,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "游戏速度",IDC_STATIC,173,185,33,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "攻击速度",IDC_STATIC,179,187,33,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    CONTROL         "Slider1",IDC_SLIDER_GAME_SPEED,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | NOT WS_VISIBLE | WS_DISABLED | 
+                    WS_TABSTOP,33,137,6,6
+    CONTROL         "Slider1",IDC_SLIDER_ATTACK_SPEED,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | NOT WS_VISIBLE | WS_DISABLED | 
+                    WS_TABSTOP,34,129,6,6
+    LTEXT           "1.0倍",IDC_STATIC_SPEEDER,199,183,24,8,NOT WS_VISIBLE
+    LTEXT           "1.0倍",IDC_STATIC_ATTACK,189,187,24,8,NOT WS_VISIBLE
+    CONTROL         "随身物品",IDC_CHECK_AUTO_BUY,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_DISABLED | WS_TABSTOP,149,161,46,10
+    PUSHBUTTON      "PK",IDC_BUTTON_QUICK_SETUP3,3,130,21,12,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    PUSHBUTTON      "BOSS",IDC_BUTTON_QUICK_SETUP2,5,127,21,12,NOT 
+                    WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "普通",IDC_BUTTON_QUICK_SETUP1,4,127,21,12,NOT 
+                    WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "挂机",IDC_BUTTON_QUICK_SETUP4,5,127,21,12,NOT 
+                    WS_VISIBLE | WS_DISABLED
+    CONTROL         "避免误伤",IDC_CHECK_NO_ATTACK,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_DISABLED | WS_TABSTOP,98,161,46,10
+    CONTROL         "体力",IDC_CHECK_SPELL_13,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | NOT WS_VISIBLE | WS_DISABLED | WS_TABSTOP,
+                    5,127,21,12
+    CONTROL         "瞬移",IDC_CHECK_SPELL_14,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | NOT WS_VISIBLE | WS_DISABLED | WS_TABSTOP,
+                    5,131,10,12
+    CONTROL         "大圈",IDC_CHECK_SPELL_15,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,208,74,21,12
+    CONTROL         "无",IDC_CHECK_SPELL_16,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | NOT WS_VISIBLE | WS_DISABLED | WS_TABSTOP,
+                    4,127,21,12
+    PUSHBUTTON      "全选",IDC_BUTTON_QUICK_SETUP5,3,127,21,12,NOT 
+                    WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "不选",IDC_BUTTON_QUICK_SETUP6,7,127,21,12,NOT 
+                    WS_VISIBLE | WS_DISABLED
+    CONTROL         "移动拾取",IDC_CHECK_AUTO_BUY2,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_DISABLED | WS_TABSTOP,196,158,46,10
+    CONTROL         "Slider1",IDC_SLIDER1,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | NOT WS_VISIBLE | WS_TABSTOP,53,107,38,24
+    GROUPBOX        "加血设置",IDC_STATIC,0,0,80,55
+    GROUPBOX        "补充功能",IDC_STATIC,87,0,58,55
+    GROUPBOX        "功能",IDC_STATIC,153,0,109,55
+    GROUPBOX        "通用魔法",IDC_STATIC,2,80,80,28
+    GROUPBOX        "枪魔法",IDC_STATIC,92,63,80,28
+    GROUPBOX        "法魔法",IDC_STATIC,178,63,80,28
+    GROUPBOX        "刀魔法",IDC_STATIC,92,94,80,28
+    GROUPBOX        "拳魔法",IDC_STATIC,178,94,80,28
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MAIN_CONFIG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 231
+    END
+
+    IDD_CONFIG6_2, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_CONFIG6_1, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_CONFIG5_3, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_CONFIG5_2, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_CONFIG4_2, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 136
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\KeyHooks.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

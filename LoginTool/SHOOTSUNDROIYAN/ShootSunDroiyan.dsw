@@ -1,0 +1,98 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# 警告: 不能编辑或删除该工作区文件！
+
+###############################################################################
+
+Project: "DataFunc"=".\DataFunc\DataFunc.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "GainSunStaticLib"="..\GAINSUNSTATICLIB\GainSunStaticLib.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name DataFunc
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "KeyHooks"=".\KeyHooks\KeyHooks.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name DataFunc
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name GainSunStaticLib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "ShootSunApi"=".\ShootSunApi\ShootSunApi.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name GainSunStaticLib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "ShootSunDroiyan"=".\ShootSunDroiyan.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ShootSunApi
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name GainSunStaticLib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name KeyHooks
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+
