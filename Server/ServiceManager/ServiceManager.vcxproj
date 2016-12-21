@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath>.</SccLocalPath>
+    <Keyword>MFCProj</Keyword>
+    <ProjectGuid>{20644D7C-024F-402F-B586-B292AD64492F}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\ServiceManager.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\ServiceManager.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <RedirectOutputAndErrors>NUL</RedirectOutputAndErrors>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\ServiceManager.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>LIBC;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>../Output/ServiceManager.exe</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\ServiceManager.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\ServiceManager.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <RedirectOutputAndErrors>NUL</RedirectOutputAndErrors>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\ServiceManager.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Debug\ServiceManager.exe</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AddFileDlg.cpp" />
+    <ClCompile Include="BadIDDlg.cpp" />
+    <ClCompile Include="BadIDSet.cpp" />
+    <ClCompile Include="BadSerialSet.cpp" />
+    <ClCompile Include="BankSerialDlg.cpp" />
+    <ClCompile Include="BankSerialSet.cpp" />
+    <ClCompile Include="BankSet.cpp" />
+    <ClCompile Include="BillDate.cpp" />
+    <ClCompile Include="ClientDlg.cpp" />
+    <ClCompile Include="ClientListDlg.cpp" />
+    <ClCompile Include="ClientLogSet.cpp" />
+    <ClCompile Include="ClientPayDlg.cpp" />
+    <ClCompile Include="ClientPaySet.cpp" />
+    <ClCompile Include="ClientSelectDlg.cpp" />
+    <ClCompile Include="ClientSerialSet.cpp" />
+    <ClCompile Include="ClientSet.cpp" />
+    <ClCompile Include="ClientSock.cpp" />
+    <ClCompile Include="ConfigFMPage.cpp" />
+    <ClCompile Include="ConfigGSPage.cpp" />
+    <ClCompile Include="ConfigSheet.cpp" />
+    <ClCompile Include="ConfigSMPage.cpp" />
+    <ClCompile Include="ConfigUMPage.cpp" />
+    <ClCompile Include="ConvSerialDlg.cpp" />
+    <ClCompile Include="Count.cpp" />
+    <ClCompile Include="CountView.cpp" />
+    <ClCompile Include="CurrentUserSet.cpp" />
+    <ClCompile Include="DeleteClientDlg.cpp" />
+    <ClCompile Include="DelFileDlg.cpp" />
+    <ClCompile Include="FileManager.cpp" />
+    <ClCompile Include="FindBankDlg.cpp" />
+    <ClCompile Include="FindUserDlg.cpp" />
+    <ClCompile Include="LogDataSet.cpp" />
+    <ClCompile Include="LoginDlg.cpp" />
+    <ClCompile Include="LogSet.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="Msg.cpp" />
+    <ClCompile Include="NewBankDlg.cpp" />
+    <ClCompile Include="NewSerialDlg.cpp" />
+    <ClCompile Include="NoticeSetDialog.cpp" />
+    <ClCompile Include="NumSerialDlg.cpp" />
+    <ClCompile Include="PatchVer.cpp" />
+    <ClCompile Include="PayDetailDlg.cpp" />
+    <ClCompile Include="PrintAddressDlg.cpp" />
+    <ClCompile Include="PrintBillDlg.cpp" />
+    <ClCompile Include="RegDlg.cpp" />
+    <ClCompile Include="SearchClientDlg.cpp" />
+    <ClCompile Include="SearchLogDlg.cpp" />
+    <ClCompile Include="SelServerDlg.cpp" />
+    <ClCompile Include="SelServiceDlg.cpp" />
+    <ClCompile Include="SerialSet.cpp" />
+    <ClCompile Include="Server.cpp" />
+    <ClCompile Include="ServerConfigDlg.cpp" />
+    <ClCompile Include="Service.cpp" />
+    <ClCompile Include="ServiceConfigDlg.cpp" />
+    <ClCompile Include="ServiceManager.cpp" />
+    <ClCompile Include="ServiceManagerDoc.cpp" />
+    <ClCompile Include="ServiceManagerView.cpp" />
+    <ClCompile Include="Session.cpp" />
+    <ClCompile Include="SessionDlg.cpp" />
+    <ClCompile Include="StatusView.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="UserCountSet.cpp" />
+    <ClCompile Include="UserDlg.cpp" />
+    <ClCompile Include="UserManager.cpp" />
+    <ClCompile Include="UserSet.cpp" />
+    <ClCompile Include="VerSet.cpp" />
+    <ClCompile Include="VersionDlg.cpp" />
+    <ClCompile Include="ZipCompress.cpp" />
+    <ClCompile Include="ZipFileViewDlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ServiceManager.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AddFileDlg.h" />
+    <ClInclude Include="BadIDDlg.h" />
+    <ClInclude Include="BadIDSet.h" />
+    <ClInclude Include="BadSerialSet.h" />
+    <ClInclude Include="BankSerialDlg.h" />
+    <ClInclude Include="BankSerialSet.h" />
+    <ClInclude Include="BankSet.h" />
+    <ClInclude Include="BillDate.h" />
+    <ClInclude Include="ClientDlg.h" />
+    <ClInclude Include="ClientListDlg.h" />
+    <ClInclude Include="ClientLogSet.h" />
+    <ClInclude Include="ClientPayDlg.h" />
+    <ClInclude Include="ClientPaySet.h" />
+    <ClInclude Include="ClientSelectDlg.h" />
+    <ClInclude Include="ClientSerialSet.h" />
+    <ClInclude Include="ClientSet.h" />
+    <ClInclude Include="ClientSock.h" />
+    <ClInclude Include="ColumnTitle.h" />
+    <ClInclude Include="ConfigFMPage.h" />
+    <ClInclude Include="ConfigGSPage.h" />
+    <ClInclude Include="ConfigSheet.h" />
+    <ClInclude Include="ConfigSMPage.h" />
+    <ClInclude Include="ConfigUMPage.h" />
+    <ClInclude Include="ConvSerialDlg.h" />
+    <ClInclude Include="Count.h" />
+    <ClInclude Include="CountView.h" />
+    <ClInclude Include="CurrentUserSet.h" />
+    <ClInclude Include="DeleteClientDlg.h" />
+    <ClInclude Include="DelFileDlg.h" />
+    <ClInclude Include="FileManager.h" />
+    <ClInclude Include="FindBankDlg.h" />
+    <ClInclude Include="FindUserDlg.h" />
+    <ClInclude Include="LogDataSet.h" />
+    <ClInclude Include="LoginDlg.h" />
+    <ClInclude Include="LogSet.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="Msg.h" />
+    <ClInclude Include="NewBankDlg.h" />
+    <ClInclude Include="NewSerialDlg.h" />
+    <ClInclude Include="NoticeSetDialog.h" />
+    <ClInclude Include="NumSerialDlg.h" />
+    <ClInclude Include="PatchVer.h" />
+    <ClInclude Include="PayDetailDlg.h" />
+    <ClInclude Include="PrintAddressDlg.h" />
+    <ClInclude Include="PrintBillDlg.h" />
+    <ClInclude Include="RegDlg.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SearchClientDlg.h" />
+    <ClInclude Include="SearchLogDlg.h" />
+    <ClInclude Include="SelServerDlg.h" />
+    <ClInclude Include="SelServiceDlg.h" />
+    <ClInclude Include="SerialSet.h" />
+    <ClInclude Include="Server.h" />
+    <ClInclude Include="ServerConfigDlg.h" />
+    <ClInclude Include="Service.h" />
+    <ClInclude Include="ServiceConfigDlg.h" />
+    <ClInclude Include="ServiceManager.h" />
+    <ClInclude Include="ServiceManagerDoc.h" />
+    <ClInclude Include="ServiceManagerView.h" />
+    <ClInclude Include="Session.h" />
+    <ClInclude Include="SessionDlg.h" />
+    <ClInclude Include="StatusConst.h" />
+    <ClInclude Include="StatusView.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="UserCountSet.h" />
+    <ClInclude Include="UserDlg.h" />
+    <ClInclude Include="UserManager.h" />
+    <ClInclude Include="UserSet.h" />
+    <ClInclude Include="VerSet.h" />
+    <ClInclude Include="VersionDlg.h" />
+    <ClInclude Include="ZipCompress.h" />
+    <ClInclude Include="ZipFileViewDlg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bitmap1.bmp" />
+    <Image Include="res\Logo.bmp" />
+    <Image Include="res\ServiceManager.ico" />
+    <Image Include="res\ServiceManagerDoc.ico" />
+    <Image Include="res\Toolbar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\ServiceManager.rc2" />
+    <CustomBuild Include="ServiceManager.reg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Zip.vcxproj">
+      <Project>{a50f85d6-5d83-46ac-9d0b-0fc1d92d44e7}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

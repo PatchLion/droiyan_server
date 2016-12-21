@@ -1685,7 +1685,7 @@ DWORD CSessionCom::CheckSerial(LPCTSTR lpszSerial1, LPCTSTR lpszSerial2)
 			nDigit[i] = atoi (strID2Check.Mid (i, 1));
 
 		int nTemp[5];
-		for (i = 0; i < 5; i++)
+		for (int  i = 0; i < 5; i++)
 		{
 			nTemp[i] = 0;
 			for (int j = 0; j < 7; j++)
@@ -1857,7 +1857,8 @@ BOOL CSessionCom::CheckPwdValid( CString strPasswd)
 	char ch ;
 	
 	strlen = strPasswd.GetLength();
-	for (int i=0; i < strlen; i++)  {
+	int i = 0;
+	for ( i=0; i < strlen; i++)  {
 		ch  =  strPasswd.GetAt(i);
 		if( !(ch > 0x2F && ch < 0x3A) ) {			// number check
 			if( !(ch > 0x40 && ch < 0x5B) ) {		// upper case check

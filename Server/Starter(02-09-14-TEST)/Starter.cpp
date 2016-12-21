@@ -42,6 +42,7 @@ TCHAR g_szAppName[256] = _T("Starter");
 BOOL CStarterApp::InitInstance()
 {
 	TCHAR szOption[32];
+
 	sscanf (m_lpCmdLine, "%s", szOption);
 
 	if (!strcmpi (szOption, _T("install")))

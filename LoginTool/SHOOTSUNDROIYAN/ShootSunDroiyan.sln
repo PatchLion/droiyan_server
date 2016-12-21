@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DataFunc", "DataFunc\DataFunc.vcxproj", "{B3D5B584-5BC5-44D8-BC00-8E74888BB7F0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GainSunStaticLib", "..\GAINSUNSTATICLIB\GainSunStaticLib.vcxproj", "{91BB4706-719A-49E1-9D53-51683B7B5C4A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KeyHooks", "KEYHOOKS\KeyHooks.vcxproj", "{89C24715-1F52-4A9E-AA07-3B73179A4ECC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ShootSunApi", "ShootSunApi\ShootSunApi.vcxproj", "{43EA5C2F-FFAB-4DB2-BBEC-23E5E996486B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ShootSunDroiyan", "ShootSunDroiyan.vcxproj", "{755A10AD-666A-457D-895E-8FBCAEBB2735}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		Template|Win32 = Template|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3D5B584-5BC5-44D8-BC00-8E74888BB7F0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B3D5B584-5BC5-44D8-BC00-8E74888BB7F0}.Debug|Win32.Build.0 = Debug|Win32
+		{B3D5B584-5BC5-44D8-BC00-8E74888BB7F0}.Release|Win32.ActiveCfg = Release|Win32
+		{B3D5B584-5BC5-44D8-BC00-8E74888BB7F0}.Release|Win32.Build.0 = Release|Win32
+		{B3D5B584-5BC5-44D8-BC00-8E74888BB7F0}.Template|Win32.ActiveCfg = Release|Win32
+		{B3D5B584-5BC5-44D8-BC00-8E74888BB7F0}.Template|Win32.Build.0 = Release|Win32
+		{91BB4706-719A-49E1-9D53-51683B7B5C4A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{91BB4706-719A-49E1-9D53-51683B7B5C4A}.Debug|Win32.Build.0 = Debug|Win32
+		{91BB4706-719A-49E1-9D53-51683B7B5C4A}.Release|Win32.ActiveCfg = Release|Win32
+		{91BB4706-719A-49E1-9D53-51683B7B5C4A}.Release|Win32.Build.0 = Release|Win32
+		{91BB4706-719A-49E1-9D53-51683B7B5C4A}.Template|Win32.ActiveCfg = Template|Win32
+		{91BB4706-719A-49E1-9D53-51683B7B5C4A}.Template|Win32.Build.0 = Template|Win32
+		{89C24715-1F52-4A9E-AA07-3B73179A4ECC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{89C24715-1F52-4A9E-AA07-3B73179A4ECC}.Debug|Win32.Build.0 = Debug|Win32
+		{89C24715-1F52-4A9E-AA07-3B73179A4ECC}.Release|Win32.ActiveCfg = Release|Win32
+		{89C24715-1F52-4A9E-AA07-3B73179A4ECC}.Release|Win32.Build.0 = Release|Win32
+		{89C24715-1F52-4A9E-AA07-3B73179A4ECC}.Template|Win32.ActiveCfg = Template|Win32
+		{89C24715-1F52-4A9E-AA07-3B73179A4ECC}.Template|Win32.Build.0 = Template|Win32
+		{43EA5C2F-FFAB-4DB2-BBEC-23E5E996486B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{43EA5C2F-FFAB-4DB2-BBEC-23E5E996486B}.Debug|Win32.Build.0 = Debug|Win32
+		{43EA5C2F-FFAB-4DB2-BBEC-23E5E996486B}.Release|Win32.ActiveCfg = Release|Win32
+		{43EA5C2F-FFAB-4DB2-BBEC-23E5E996486B}.Release|Win32.Build.0 = Release|Win32
+		{43EA5C2F-FFAB-4DB2-BBEC-23E5E996486B}.Template|Win32.ActiveCfg = Template|Win32
+		{43EA5C2F-FFAB-4DB2-BBEC-23E5E996486B}.Template|Win32.Build.0 = Template|Win32
+		{755A10AD-666A-457D-895E-8FBCAEBB2735}.Debug|Win32.ActiveCfg = Debug|Win32
+		{755A10AD-666A-457D-895E-8FBCAEBB2735}.Debug|Win32.Build.0 = Debug|Win32
+		{755A10AD-666A-457D-895E-8FBCAEBB2735}.Release|Win32.ActiveCfg = Release|Win32
+		{755A10AD-666A-457D-895E-8FBCAEBB2735}.Release|Win32.Build.0 = Release|Win32
+		{755A10AD-666A-457D-895E-8FBCAEBB2735}.Template|Win32.ActiveCfg = Template|Win32
+		{755A10AD-666A-457D-895E-8FBCAEBB2735}.Template|Win32.Build.0 = Template|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
