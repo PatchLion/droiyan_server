@@ -16264,7 +16264,7 @@ void USER::ItemLoadReq(TCHAR *pBuf)
 					CheckMaxValue(m_dwDN, pItem->dwMoney);
 
 					iDN = (DWORD)m_dwDN;
-					dwDN = (DWORD)abs(iDN - (DWORD)pItem->dwMoney);
+					dwDN = (DWORD)abs((long)(iDN - (DWORD)pItem->dwMoney));
 				}
 
 				CheckMaxValue(m_dwDN, pItem->dwMoney);

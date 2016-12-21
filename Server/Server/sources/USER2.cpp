@@ -9731,8 +9731,8 @@ BOOL USER::CheckMoveSpeedHack(DWORD checkTick)
 	}
 	else if( m_iTickCount == 5 )
 	{
-		DWORD client = abs( checkTick - m_dLastCheckTick );
-		DWORD server = abs( curTick - m_dCheckTick );
+		DWORD client = abs((long)(checkTick - m_dLastCheckTick));
+		DWORD server = abs((long)(curTick - m_dCheckTick));
 		double gap = (double)client / (double)server;
 
 		m_dTotCheckTick -= m_dTotCheckTick / 20;
@@ -9785,8 +9785,8 @@ BOOL USER::CheckRunSpeedHack(DWORD checkTick, BOOL bTwo)
 	}
 	else if( m_iTickCount == 5 )
 	{
-		DWORD client = abs( checkTick - m_dLastCheckTick );
-		DWORD server = abs( curTick - m_dCheckTick );
+		DWORD client = abs((long)(checkTick - m_dLastCheckTick));
+		DWORD server = abs((long)(curTick - m_dCheckTick));
 		double gap = (double)client / (double)server;
 
 		m_dTotCheckTick -= m_dTotCheckTick / 20;
