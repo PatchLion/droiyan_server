@@ -660,413 +660,407 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="Header Files\." />
-  </ItemGroup>
-  <ItemGroup>
-    <Filter Include="Header Files\.\sources" />
+    <Filter Include="Header Files\sources" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="stdafx.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\AccessoriUpTable.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\AccessoriUpTableSet.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\AddEventItemTableSet.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\BoxEventTable.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\BoxEventTableSet.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\BufferEx.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\CBSocket.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\CELL.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\COM.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\CircularBuffer.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\CityNpcTableSet.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\Compress.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\DBItemInfo.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\DNTable.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\DNTableSet.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\Define.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\DressingSet.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\EBodyIdentifyTable.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\EBodyIdentifyTableSet.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\EBodyStoreSet.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\EBodyTable.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\EBodyTableSet.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\EBodyUpgradeTable.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\EBodyUpgradeTableSet.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\EVENT.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\EVENT_DATA.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\EXEC.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\ErrorLog.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\EventBlockingTable.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\EventItemNew.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\EventItemTable.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\EventItemTableSet.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\EventZone.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\Extern.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\Guild.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\GuildFortress.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\GuildFortressSet.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\GuildFortressTaxSet.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\GuildHouse.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\GuildHouseRankSet.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\GuildHouseSet.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\GuildHouseWar.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\GuildMapInfoSet.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\GuildMapInfoTable.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\GuildStoreSet.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\GuildStoreTable.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\GuildUser.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\Hyper.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\IOCPBASE.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\IOCPSocket.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\InitItemTableSet.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\Item.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\ItemTable.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\ItemTableSet.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\JvCryption.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\LOGIC.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\LOGIC_ELSE.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\LevelUpTable.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\LevelUpTableSet.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\MAP.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\MagicItemTable.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\MagicItemTableSet.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\Mcommon.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\MechanicStoreSet.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\MemUser.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\MonsterPsiSet.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\MyDB.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\Npc.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\NpcChat.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\NpcChatSet.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\NpcItem.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\NpcItemSet.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\NpcPosSet.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\NpcSayEventSet.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\NpcSayTable.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\NpcTable.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\NpcTableSet.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\NpcThread.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\PAMAExp.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\PAMAExpSet.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\Packet.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\Path.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\PathFind.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\PoolBase.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\PsiStoreSet.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\PsiTable.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\PsiTableSet.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\Recover.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\RecoverRate.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\RecoverRateSet.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\RecoverSet.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\Remodeling02TableSet.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\Remodeling03TableSet.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\RemodelingTable.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\RemodelingTableSet.h">
-      <Filter>Header Files\.\sources</Filter>
-    </CustomBuild>
-    <CustomBuild Include="sources\Resource.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\RoyalRumble.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\RoyalRumbleUser.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\SCDefine.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\SERVERINFO.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\SResourceArray.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\SSocket.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\Search.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\Server.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\ServerDlg.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\SharedMemory.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\SharedQueue.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\ShopSystem.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\SkillTable.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\SkillTableSet.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\SockDataList.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\SocketManager.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\Store.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\StoreRepairSet.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\StoreSellSet.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\StoreSet.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\SummonTable.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\TableItem.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\ThrowItem.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\TownPotalTableSet.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\UNI_CHAR.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\UResourceArray.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\USER.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\UserLevelUpSet.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\UserLevelUpTable.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\UserManager.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\ValItemTable.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\ValItemTableSet.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\VirtualRoom.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\ZoneInfoSet.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\global.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\ov.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
     <CustomBuild Include="sources\sinstance.h">
-      <Filter>Header Files\.\sources</Filter>
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>

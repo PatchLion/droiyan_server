@@ -404,14 +404,11 @@ echo #include "stdafx.h"&gt;&gt;stdafx.h.cpp</Command>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
     </ClCompile>
   </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="H:\git_repositories\d_server_sources\Server\FileManager\FileManager_resource.rc" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties Qt5Version_x0020_Win32="5.3.2_32_noopengl" />
+      <UserProperties Qt5Version_x0020_Win32="msvc2013_32" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

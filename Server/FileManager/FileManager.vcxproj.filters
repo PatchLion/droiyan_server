@@ -122,18 +122,9 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="Root Files\H:\git_repositories" />
-  </ItemGroup>
-  <ItemGroup>
-    <Filter Include="Root Files\H:\git_repositories\d_server_sources" />
-  </ItemGroup>
-  <ItemGroup>
     <Filter Include="Root Files\H:\git_repositories\d_server_sources\Server" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Root Files\H:\git_repositories\d_server_sources\Server\FileManager" />
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="H:\git_repositories\d_server_sources\Server\FileManager\FileManager_resource.rc" />
   </ItemGroup>
 </Project>
