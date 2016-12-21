@@ -1,99 +1,139 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{e4ccca80-a5da-4f3b-8fa0-a64f36485f30}</UniqueIdentifier>
-      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
     </Filter>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{77ddc513-9d55-4614-9bbf-5b02a738adb6}</UniqueIdentifier>
-      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{851f03e1-5f2a-4f45-bb02-43e08311d3a7}</UniqueIdentifier>
-      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;cnt;rtf;gif;jpg;jpeg;jpe</Extensions>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ErrorLog.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="FileInfo.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="FileManager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="FileManagerCom.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Msg.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Net.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="PatchVer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ServiceMain.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SessDesc.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="StdAfx.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="VerSet.cpp">
-      <Filter>Source Files</Filter>
+    <Filter Include="Source Files\sources" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\ErrorLog.cpp">
+      <Filter>Source Files\sources</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="FileManager.rc">
-      <Filter>Source Files</Filter>
-    </ResourceCompile>
+    <ClCompile Include="sources\FileInfo.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ErrorLog.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="FileInfo.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="FileManager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="FileManagerCom.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Include\FMProtocol.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="PatchVer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Resource.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="StdAfx.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="VerSet.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <ClCompile Include="sources\FileManager.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="res\FileManager.ico">
-      <Filter>Resource Files</Filter>
-    </Image>
+    <ClCompile Include="sources\FileManagerCom.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="ReadMe.txt" />
+    <ClCompile Include="sources\Msg.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="res\FileManager.rc2">
-      <Filter>Resource Files</Filter>
+    <ClCompile Include="sources\Net.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\PatchVer.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\ServiceMain.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\SessDesc.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\SessThread.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\VerSet.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\sources" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="stdafx.h">
+      <Filter>Header Files</Filter>
     </CustomBuild>
+    <CustomBuild Include="sources\ErrorLog.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\FileInfo.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\FileManager.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\FileManagerCom.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\PatchVer.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\Resource.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\SessThread.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\VerSet.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.h.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Root Files\H:\git_repositories" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Root Files\H:\git_repositories\d_server_sources" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Root Files\H:\git_repositories\d_server_sources\Server" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Root Files\H:\git_repositories\d_server_sources\Server\FileManager" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="H:\git_repositories\d_server_sources\Server\FileManager\FileManager_resource.rc" />
   </ItemGroup>
 </Project>

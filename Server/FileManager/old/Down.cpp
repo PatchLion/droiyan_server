@@ -18,7 +18,7 @@ CDown::CDown()
 {
 	m_pDes = NULL;
 	m_dwCurrentDown = m_dwCurrentSend = 0;
-	m_nState = stateNone;
+	
 }
 
 CDown::~CDown()
