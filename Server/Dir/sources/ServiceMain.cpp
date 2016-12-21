@@ -38,7 +38,7 @@ DWORD dwSrvPendToState[] =
 	SERVICE_PAUSED,
 	0
 };
-
+ 
 void WINAPI ServiceHandler (DWORD dwControl)
 {
 	if (g_hIOCP)
