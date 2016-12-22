@@ -1,79 +1,87 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{6f668a52-0eb1-4dcc-84a3-760d171e3ed8}</UniqueIdentifier>
-      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
     </Filter>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{a358c3ef-3d03-4261-b3b4-bad6fc520125}</UniqueIdentifier>
-      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{ba751c0e-16da-4c79-908c-f94807ad813b}</UniqueIdentifier>
-      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;cnt;rtf;gif;jpg;jpeg;jpe</Extensions>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Msg.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Net.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ServiceMain.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SessDesc.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="StdAfx.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="UserManager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="UserManagerCom.cpp">
-      <Filter>Source Files</Filter>
+    <Filter Include="Source Files\sources" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\Msg.cpp">
+      <Filter>Source Files\sources</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="UserManager.rc">
-      <Filter>Source Files</Filter>
-    </ResourceCompile>
+    <ClCompile Include="sources\Net.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Resource.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Session.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="StdAfx.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Include\UMProtocol.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UserManager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UserManagerCom.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <ClCompile Include="sources\ServiceMain.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="res\UserManager.ico">
-      <Filter>Resource Files</Filter>
-    </Image>
+    <ClCompile Include="sources\SessDesc.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="ReadMe.txt" />
+    <ClCompile Include="sources\UserManager.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="res\UserManager.rc2">
-      <Filter>Resource Files</Filter>
+    <ClCompile Include="sources\UserManagerCom.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\sources" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="stdafx.h">
+      <Filter>Header Files</Filter>
     </CustomBuild>
-    <CustomBuild Include="UM_LOGIN.SQL" />
+    <CustomBuild Include="sources\Session.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\UserManager.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\UserManagerCom.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.h.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="UserManager.rc" />
   </ItemGroup>
 </Project>
