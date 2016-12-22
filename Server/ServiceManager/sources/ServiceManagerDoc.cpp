@@ -1434,7 +1434,7 @@ DWORD CServiceManagerDoc::CheckSerial(LPCTSTR lpszSerial1, LPCTSTR lpszSerial2)
 			nDigit[i] = atoi (strID2Check.Mid (i, 1));
 
 		int nTemp[5];
-		for (i = 0; i < 5; i++)
+		for (int i = 0; i < 5; i++)
 		{
 			nTemp[i] = 0;
 			for (int j = 0; j < 7; j++)
@@ -1749,7 +1749,7 @@ CString CServiceManagerDoc::GetSerial1(LPCTSTR lpszSerial2, int nNumDigit)
 		nDigit[i] = atoi (strSerial2.Mid (i, 1));
 
 	int nTemp[5];
-	for (i = 0; i < 5; i++)
+	for (int i = 0; i < 5; i++)
 	{
 		nTemp[i] = 0;
 		for (int j = 0; j < 7; j++)

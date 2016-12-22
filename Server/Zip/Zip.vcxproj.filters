@@ -73,11 +73,20 @@
     <Filter Include="Header Files\include" />
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="Header Files\sources" />
-  </ItemGroup>
-  <ItemGroup>
     <CustomBuild Include="stdafx.h">
       <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="include\AutoBuffer.h">
+      <Filter>Header Files\include</Filter>
+    </CustomBuild>
+    <CustomBuild Include="include\BigFile.h">
+      <Filter>Header Files\include</Filter>
+    </CustomBuild>
+    <CustomBuild Include="include\CentralDir.h">
+      <Filter>Header Files\include</Filter>
+    </CustomBuild>
+    <CustomBuild Include="include\FileHeader.h">
+      <Filter>Header Files\include</Filter>
     </CustomBuild>
     <CustomBuild Include="include\ZipArchive.h">
       <Filter>Header Files\include</Filter>
@@ -90,18 +99,6 @@
     </CustomBuild>
     <CustomBuild Include="include\ZipStorage.h">
       <Filter>Header Files\include</Filter>
-    </CustomBuild>
-    <CustomBuild Include="sources\AutoBuffer.h">
-      <Filter>Header Files\sources</Filter>
-    </CustomBuild>
-    <CustomBuild Include="sources\BigFile.h">
-      <Filter>Header Files\sources</Filter>
-    </CustomBuild>
-    <CustomBuild Include="sources\CentralDir.h">
-      <Filter>Header Files\sources</Filter>
-    </CustomBuild>
-    <CustomBuild Include="sources\FileHeader.h">
-      <Filter>Header Files\sources</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>

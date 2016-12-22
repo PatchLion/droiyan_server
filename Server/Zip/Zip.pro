@@ -13,8 +13,8 @@ DEFINES += ZLIB_DLL
 
 PRECOMPILED_HEADER = stdafx.h
 
-INCLUDEPATH += ./zlib ./sources ./include .
+INCLUDEPATH += ./zlib ./sources ./include . ../libs/zip/include
 
-HEADERS += ./sources/*.h ./include/*.h
+HEADERS += ./include/*.h
 SOURCES += ./sources/*.cpp
 

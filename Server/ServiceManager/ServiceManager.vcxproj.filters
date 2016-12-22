@@ -1,469 +1,601 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{2faa205a-6f14-427e-a765-3687ca196f27}</UniqueIdentifier>
-      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
     </Filter>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{10fb27d1-2991-48a5-8a1b-217c9ccfcbfe}</UniqueIdentifier>
-      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{811bfe53-ab6b-460d-91a2-76e24ee35926}</UniqueIdentifier>
-      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;cnt;rtf;gif;jpg;jpeg;jpe</Extensions>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="AddFileDlg.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="BadIDDlg.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="BadIDSet.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="BadSerialSet.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="BankSerialDlg.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="BankSerialSet.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="BankSet.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="BillDate.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ClientDlg.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ClientListDlg.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ClientLogSet.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ClientPayDlg.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ClientPaySet.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ClientSelectDlg.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ClientSerialSet.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ClientSet.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ClientSock.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ConfigFMPage.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ConfigGSPage.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ConfigSheet.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ConfigSMPage.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ConfigUMPage.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ConvSerialDlg.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Count.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="CountView.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="CurrentUserSet.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="DeleteClientDlg.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="DelFileDlg.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="FileManager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="FindBankDlg.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="FindUserDlg.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LogDataSet.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LoginDlg.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LogSet.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="MainFrm.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Msg.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="NewBankDlg.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="NewSerialDlg.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="NoticeSetDialog.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="NumSerialDlg.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="PatchVer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="PayDetailDlg.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="PrintAddressDlg.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="PrintBillDlg.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="RegDlg.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SearchClientDlg.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SearchLogDlg.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SelServerDlg.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SelServiceDlg.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SerialSet.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Server.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ServerConfigDlg.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Service.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ServiceConfigDlg.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ServiceManager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ServiceManagerDoc.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ServiceManagerView.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Session.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SessionDlg.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="StatusView.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="StdAfx.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="UserCountSet.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="UserDlg.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="UserManager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="UserSet.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="VerSet.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="VersionDlg.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ZipCompress.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ZipFileViewDlg.cpp">
-      <Filter>Source Files</Filter>
+    <Filter Include="Source Files\sources" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\AddFileDlg.cpp">
+      <Filter>Source Files\sources</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="ServiceManager.rc">
-      <Filter>Source Files</Filter>
-    </ResourceCompile>
+    <ClCompile Include="sources\BadIDDlg.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="res\ServiceManager.rc2">
-      <Filter>Resource Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="ServiceManager.reg" />
-    <CustomBuild Include="ReadMe.txt" />
-    <CustomBuild Include="AddFileDlg.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="BadIDDlg.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="BadIDSet.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="BadSerialSet.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="BankSerialDlg.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="BankSerialSet.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="BankSet.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="BillDate.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="ClientDlg.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="ClientListDlg.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="ClientLogSet.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="ClientPayDlg.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="ClientPaySet.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="ClientSelectDlg.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="ClientSerialSet.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="ClientSet.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="ClientSock.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="ColumnTitle.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="ConfigFMPage.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="ConfigGSPage.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="ConfigSheet.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="ConfigSMPage.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="ConfigUMPage.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="ConvSerialDlg.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="Count.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="CountView.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="CurrentUserSet.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="DeleteClientDlg.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="DelFileDlg.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="FileManager.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="FindBankDlg.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="FindUserDlg.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="LogDataSet.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="LoginDlg.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="LogSet.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="MainFrm.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="Msg.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="NewBankDlg.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="NewSerialDlg.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="NoticeSetDialog.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="NumSerialDlg.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="PatchVer.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="PayDetailDlg.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="PrintAddressDlg.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="PrintBillDlg.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="RegDlg.h">
+    <ClCompile Include="sources\BadIDSet.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\BadSerialSet.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\BankSerialDlg.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\BankSerialSet.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\BankSet.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\BillDate.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\ClientDlg.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\ClientListDlg.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\ClientLogSet.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\ClientPayDlg.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\ClientPaySet.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\ClientSelectDlg.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\ClientSerialSet.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\ClientSet.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\ClientSock.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\ConfigFMPage.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\ConfigGSPage.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\ConfigSMPage.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\ConfigSheet.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\ConfigUMPage.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\ConvSerialDlg.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\Count.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\CountView.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\CurrentUserSet.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\DelFileDlg.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\DeleteClientDlg.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\FileManager.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\FindBankDlg.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\FindUserDlg.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\LogDataSet.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\LogSet.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\LoginDlg.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\MainFrm.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\Msg.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\NewBankDlg.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\NewSerialDlg.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\NoticeSetDialog.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\NumSerialDlg.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\PatchVer.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\PayDetailDlg.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\PrintAddressDlg.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\PrintBillDlg.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\RegDlg.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\SearchClientDlg.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\SearchLogDlg.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\SelServerDlg.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\SelServiceDlg.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\SerialSet.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\Server.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\ServerConfigDlg.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\Service.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\ServiceConfigDlg.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\ServiceManager.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\ServiceManagerDoc.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\ServiceManagerView.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\Session.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\SessionDlg.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\StatusView.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\UserCountSet.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\UserDlg.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\UserManager.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\UserSet.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\VerSet.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\VersionDlg.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\ZipCompress.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\ZipFileViewDlg.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\sources" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="stdafx.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
     <CustomBuild Include="resource.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
-    <CustomBuild Include="SearchClientDlg.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="sources\AddFileDlg.h">
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
-    <CustomBuild Include="SearchLogDlg.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="sources\BadIDDlg.h">
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
-    <CustomBuild Include="SelServerDlg.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="sources\BadIDSet.h">
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
-    <CustomBuild Include="SelServiceDlg.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="sources\BadSerialSet.h">
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
-    <CustomBuild Include="SerialSet.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="sources\BankSerialDlg.h">
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
-    <CustomBuild Include="Server.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="sources\BankSerialSet.h">
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
-    <CustomBuild Include="ServerConfigDlg.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="sources\BankSet.h">
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
-    <CustomBuild Include="Service.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="sources\BillDate.h">
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
-    <CustomBuild Include="ServiceConfigDlg.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="sources\ClientDlg.h">
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
-    <CustomBuild Include="ServiceManager.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="sources\ClientListDlg.h">
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
-    <CustomBuild Include="ServiceManagerDoc.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="sources\ClientLogSet.h">
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
-    <CustomBuild Include="ServiceManagerView.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="sources\ClientPayDlg.h">
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
-    <CustomBuild Include="Session.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="sources\ClientPaySet.h">
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
-    <CustomBuild Include="SessionDlg.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="sources\ClientSelectDlg.h">
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
-    <CustomBuild Include="StatusConst.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="sources\ClientSerialSet.h">
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
-    <CustomBuild Include="StatusView.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="sources\ClientSet.h">
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
-    <CustomBuild Include="StdAfx.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="sources\ClientSock.h">
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
-    <CustomBuild Include="UserCountSet.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="sources\ColumnTitle.h">
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
-    <CustomBuild Include="UserDlg.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="sources\ConfigFMPage.h">
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
-    <CustomBuild Include="UserManager.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="sources\ConfigGSPage.h">
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
-    <CustomBuild Include="UserSet.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="sources\ConfigSMPage.h">
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
-    <CustomBuild Include="VerSet.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="sources\ConfigSheet.h">
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
-    <CustomBuild Include="VersionDlg.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="sources\ConfigUMPage.h">
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
-    <CustomBuild Include="ZipCompress.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="sources\ConvSerialDlg.h">
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
-    <CustomBuild Include="ZipFileViewDlg.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="sources\Count.h">
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
-    <CustomBuild Include="res\bitmap1.bmp">
-      <Filter>Resource Files</Filter>
+    <CustomBuild Include="sources\CountView.h">
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
-    <CustomBuild Include="res\Logo.bmp">
-      <Filter>Resource Files</Filter>
+    <CustomBuild Include="sources\CurrentUserSet.h">
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
-    <CustomBuild Include="res\ServiceManager.ico">
-      <Filter>Resource Files</Filter>
+    <CustomBuild Include="sources\DelFileDlg.h">
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
-    <CustomBuild Include="res\ServiceManagerDoc.ico">
-      <Filter>Resource Files</Filter>
+    <CustomBuild Include="sources\DeleteClientDlg.h">
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
-    <CustomBuild Include="res\Toolbar.bmp">
-      <Filter>Resource Files</Filter>
+    <CustomBuild Include="sources\FileManager.h">
+      <Filter>Header Files\sources</Filter>
     </CustomBuild>
+    <CustomBuild Include="sources\FindBankDlg.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\FindUserDlg.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\LogDataSet.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\LogSet.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\LoginDlg.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\MainFrm.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\Msg.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\NewBankDlg.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\NewSerialDlg.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\NoticeSetDialog.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\NumSerialDlg.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\PatchVer.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\PayDetailDlg.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\PrintAddressDlg.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\PrintBillDlg.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\RegDlg.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\SearchClientDlg.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\SearchLogDlg.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\SelServerDlg.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\SelServiceDlg.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\SerialSet.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\Server.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\ServerConfigDlg.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\Service.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\ServiceConfigDlg.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\ServiceManager.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\ServiceManagerDoc.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\ServiceManagerView.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\Session.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\SessionDlg.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\StatusConst.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\StatusView.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\UserCountSet.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\UserDlg.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\UserManager.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\UserSet.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\VerSet.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\VersionDlg.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\ZipCompress.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\ZipFileViewDlg.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.h.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ServiceManager.rc" />
   </ItemGroup>
 </Project>

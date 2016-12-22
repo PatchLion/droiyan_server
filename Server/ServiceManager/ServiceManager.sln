@@ -5,8 +5,6 @@ VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ServiceManager", "ServiceManager.vcxproj", "{20644D7C-024F-402F-B586-B292AD64492F}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Zip", "Zip.vcxproj", "{A50F85D6-5D83-46AC-9D0B-0FC1D92D44E7}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -23,14 +21,6 @@ Global
 		{20644D7C-024F-402F-B586-B292AD64492F}.Static Release|Win32.Build.0 = Release|Win32
 		{20644D7C-024F-402F-B586-B292AD64492F}.Template|Win32.ActiveCfg = Release|Win32
 		{20644D7C-024F-402F-B586-B292AD64492F}.Template|Win32.Build.0 = Release|Win32
-		{A50F85D6-5D83-46AC-9D0B-0FC1D92D44E7}.Debug|Win32.ActiveCfg = Debug|Win32
-		{A50F85D6-5D83-46AC-9D0B-0FC1D92D44E7}.Debug|Win32.Build.0 = Debug|Win32
-		{A50F85D6-5D83-46AC-9D0B-0FC1D92D44E7}.Release|Win32.ActiveCfg = Release|Win32
-		{A50F85D6-5D83-46AC-9D0B-0FC1D92D44E7}.Release|Win32.Build.0 = Release|Win32
-		{A50F85D6-5D83-46AC-9D0B-0FC1D92D44E7}.Static Release|Win32.ActiveCfg = Static Release|Win32
-		{A50F85D6-5D83-46AC-9D0B-0FC1D92D44E7}.Static Release|Win32.Build.0 = Static Release|Win32
-		{A50F85D6-5D83-46AC-9D0B-0FC1D92D44E7}.Template|Win32.ActiveCfg = Template|Win32
-		{A50F85D6-5D83-46AC-9D0B-0FC1D92D44E7}.Template|Win32.Build.0 = Template|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
