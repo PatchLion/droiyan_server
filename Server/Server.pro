@@ -5,5 +5,6 @@ SUBDIRS=Dir/Dir.pro \
         Server/ServerComp.pro \
         ServiceManager/ServiceManager.pro \
         Zip/Zip.pro \
-        Session/Session.pro
+        Session/Session.pro \
+        Starter(02-09-14-TEST)/Starter.pro
 
