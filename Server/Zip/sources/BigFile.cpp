@@ -20,10 +20,10 @@ CBigFile::~CBigFile()
 
 }
 
-_int64 CBigFile::Seek(_int64 dOff, UINT nFrom)
+ULONGLONG CBigFile::Seek(LONGLONG dOff, UINT nFrom)
 {
 	ASSERT_VALID(this);
-	ASSERT(m_hFile != (UINT)hFileNull);
+	ASSERT(m_hFile != hFileNull);
 	ASSERT(nFrom == begin || nFrom == end || nFrom == current);
 	ASSERT(begin == FILE_BEGIN && end == FILE_END && current == FILE_CURRENT);
 	LARGE_INTEGER li;

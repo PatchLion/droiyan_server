@@ -3,35 +3,18 @@
 # ------------------------------------------------------
 
 TEMPLATE = lib
-TARGET = Zip
-DESTDIR = ./Debug
 CONFIG += staticlib release
-DEFINES += _WINDOWS ZLIB_DLL
-INCLUDEPATH += .
-LIBS += -L"."
-DEPENDPATH += .
-MOC_DIR += ./GeneratedFiles/debug
-OBJECTS_DIR += debug
-UI_DIR += ./GeneratedFiles
-RCC_DIR += ./GeneratedFiles
 
+include(../public.pri)
 
-HEADERS += ./AutoBuffer.h \
-    ./BigFile.h \
-    ./CentralDir.h \
-    ./FileHeader.h \
-    ./StdAfx.h \
-    ./ZipArchive.h \
-    ./ZipException.h \
-    ./ZipInternalInfo.h \
-    ./ZipStorage.h
-SOURCES += ./AutoBuffer.cpp \
-    ./BigFile.cpp \
-    ./CentralDir.cpp \
-    ./FileHeader.cpp \
-    ./StdAfx.cpp \
-    ./ZipArchive.cpp \
-    ./ZipException.cpp \
-    ./ZipInternalInfo.cpp \
-    ./ZipStorage.cpp
+TARGET = Zip
+DESTDIR = ./lib/$(Platform)/$(Configuration)
+DEFINES += ZLIB_DLL
+
+PRECOMPILED_HEADER = stdafx.h
+
+INCLUDEPATH += ./zlib ./sources ./include .
+
+HEADERS += ./sources/*.h ./include/*.h
+SOURCES += ./sources/*.cpp
 
