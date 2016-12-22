@@ -1,8 +1,8 @@
-UI_DIR = ../temp/GeneratedFiles
-RCC_DIR = ../temp/GeneratedFiles
-MOC_DIR = ../temp/GeneratedFiles
-OBJECTS_DIR = ../temp/$(Platform)/$(Configuration)
-INCLUDEPATH += ../temp/GeneratedFiles
+UI_DIR = ../temp/$(ProjectName)/GeneratedFiles
+RCC_DIR = ../temp/$(ProjectName)/GeneratedFiles
+MOC_DIR = ../temp/$(ProjectName)/GeneratedFiles
+OBJECTS_DIR = ../temp/$(ProjectName)/$(Platform)/$(Configuration)
+INCLUDEPATH += ../temp/$(ProjectName)/GeneratedFiles
 CONFIG -= flat
 DEFINES -= UNICODE
 DEFINES += _AFXDLL

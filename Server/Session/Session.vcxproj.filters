@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files\sources" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\BankSerial.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\CP_IP_MASKTable.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\ConsoleManager.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\Database.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\LogSet.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\Msg.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\Recordset.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\SResourceArray.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\SerialKey.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\SerialSet.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\ServiceMain.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\SessDesc.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\Session.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\SessionCom.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\SocketManager.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\UResourceArray.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\USResourceArray.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\UserManager.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\UserServerManager.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\UserSet.cpp">
+      <Filter>Source Files\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\sources" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\BankSerial.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\CP_IP_MASKTable.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\Database.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\Define.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\Iocp.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\LogSet.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\Recordset.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\SResourceArray.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\SerialKey.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\SerialSet.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\Session.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\SessionCom.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\SocketManager.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\UResourceArray.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\USResourceArray.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\UserManager.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\UserServerManager.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\UserSet.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sources\mcommon.h">
+      <Filter>Header Files\sources</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.h.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Session.rc" />
+  </ItemGroup>
+</Project>

@@ -3,7 +3,7 @@
 # ------------------------------------------------------
 
 TEMPLATE = lib
-CONFIG += staticlib release
+CONFIG += staticlib
 
 include(../public.pri)
 
