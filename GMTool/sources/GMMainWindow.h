@@ -4,7 +4,9 @@
 #include <QMainWindow>
 #include "ui_GMMainWindow.h"
 #include <QtSql>
+#include <QMdiArea>
 
+class CItemsManager;
 class CGMMainWindow : public QMainWindow, public Ui::CGMMainWindow
 {
     Q_OBJECT
@@ -23,6 +25,7 @@ protected Q_SLOTS:
 	//Support SQLITE, ODBC, MYSQL
 	void onConnectDBSelected(bool checked);
 	void onResetConfigFile(bool checked);
+	void onItemsManage(bool checked);
 
 private:
 	void initMenuBar();
@@ -30,6 +33,8 @@ private:
 
 private:
 	QSqlDatabase	m_dbConnect;
+	QMdiArea *m_mdiArea;
+	CItemsManager *m_itemsManager;
 };
 
 #endif // GMMAINWINDOW_H

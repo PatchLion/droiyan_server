@@ -1,0 +1,23 @@
+<UI version="4.0" >
+ <class>CItemsManager</class>
+ <widget class="QWidget" name="CItemsManager" >
+  <property name="objectName" >
+   <string notr="true">CItemsManager</string>
+  </property>
+  <property name="geometry" >
+   <rect>
+	<x>0</x>
+	<y>0</y>
+	<width>400</width>
+	<height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>CItemsManager</string>
+  </property>  
+ </widget>
+ <layoutDefault spacing="6" margin="11" />
+ <pixmapfunction></pixmapfunction>
+ <resources/>
+ <connections/>
+</UI>

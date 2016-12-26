@@ -10,19 +10,29 @@ MOC_DIR = ./temp/GeneratedFiles
 OBJECTS_DIR = ./temp/$(Platform)/$(Configuration)
 INCLUDEPATH += ./temp/GeneratedFiles
 
-INCLUDEPATH += ./QxOrm/include ./sources
-LIBS += -L./QxOrm/lib/$(Configuration) -lQxOrm
+INCLUDEPATH += \
+# ./QxOrm/include/include \
+                             ./sources \
+                            ./sources/ItemsManager \
+                            ./sources/ItemsManager/orm #\
+                            #H:\git_repositories\boost_1_62_0
+
+#LIBS += -L./QxOrm/lib/$(Configuration) -lQxOrm
 
 win32{
     CONFIG -= flat
 }
 
 
-SOURCES += ./main.cpp \
-    sources/GMMainWindow.cpp
+SOURCES += ./*.cpp \
+    sources/*.cpp \
+    sources/ItemsManager/*.cpp #\
+    #sources/ItemsManager/orm/*.cpp
 
 FORMS += \
-    sources/GMMainWindow.ui
+    sources/*.ui
 
 HEADERS += \
-    sources/GMMainWindow.h
+    sources/*.h \
+    sources/ItemsManager/*.h#\
+    #sources/ItemsManager/orm/*.h

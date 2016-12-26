@@ -2,6 +2,7 @@
 #include "ui_GMMainWindow.h"
 #include <QtWidgets>
 #include <QtCore>
+#include "ItemsManager.h"
 
 const char* kDBConfigFileName = "DBConnect.ini";
 
@@ -9,15 +10,23 @@ const char* kDBConfigFileName = "DBConnect.ini";
 
 CGMMainWindow::CGMMainWindow(QWidget *parent)
 	: QMainWindow(parent)
+	, m_itemsManager(0)
 {
 	setupUi(this);
-	
+
+	m_mdiArea = new QMdiArea;
+	m_mdiArea->setHorizontalScrollBarPolicy(Qt::ScrollBarAsNeeded);
+	m_mdiArea->setVerticalScrollBarPolicy(Qt::ScrollBarAsNeeded);
+	setCentralWidget(m_mdiArea);
+
 	QStringList drivers = QSqlDatabase::drivers();
 	qDebug() << "DB Driver list: ";
 	foreach(QString driver, drivers)
 		qDebug() << driver;
 
 	initMenuBar();
+
+	setUnifiedTitleAndToolBarOnMac(true);
 }
 
 CGMMainWindow::~CGMMainWindow()
@@ -37,6 +46,15 @@ void CGMMainWindow::initMenuBar()
 	//Rest Config File
 	QAction* reset_config_file = start_menu->addAction(tr("Reset config file"));
 	connect(reset_config_file, &QAction::triggered, this, &CGMMainWindow::onResetConfigFile);
+
+
+
+
+	//////////////////////////////////////////////////////////////////////////
+	//Items Manage
+	QAction* items_mgr_menu = menubar->addAction(tr("Items Manage"));
+	connect(items_mgr_menu, &QAction::triggered, this, &CGMMainWindow::onItemsManage);
+
 }
 
 void CGMMainWindow::onConnectDBSelected(bool checked)
@@ -117,4 +135,15 @@ void CGMMainWindow::onResetConfigFile(bool checked)
 QString CGMMainWindow::configFilePath()
 {
 	return  QApplication::applicationDirPath() + "/" + kDBConfigFileName;
+}
+
+void CGMMainWindow::onItemsManage(bool checked)
+{
+	if (!m_itemsManager)
+	{
+		m_itemsManager = new CItemsManager;
+		m_mdiArea->addSubWindow(m_itemsManager);
+	}
+	
+	m_itemsManager->show();
 }
