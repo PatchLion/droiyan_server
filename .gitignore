@@ -250,6 +250,7 @@ paket-files/
 *.pro.user
 moc_*.cpp
 ui_*.cpp
+temp/
 
 # JetBrains Rider
 .idea/

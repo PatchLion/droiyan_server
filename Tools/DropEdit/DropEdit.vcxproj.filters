@@ -47,6 +47,11 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="MonsterDropInfoItem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -73,11 +78,19 @@
     <CustomBuild Include="temp\GeneratedFiles\ui_DropEditWidget.h">
       <Filter>Generated Files\temp\GeneratedFiles</Filter>
     </CustomBuild>
+    <CustomBuild Include="temp\GeneratedFiles\ui_MonsterDropInfoItem.h">
+      <Filter>Generated Files\temp\GeneratedFiles</Filter>
+    </CustomBuild>
     <CustomBuild Include="Functions.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
     <CustomBuild Include="..\..\Server\Server\sources\NpcItem.h">
       <Filter>Header Files\..\..\Server\Server\sources</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="MonsterDropInfoItem.h">
+      <Filter>Header Files</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
@@ -92,7 +105,17 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="temp\GeneratedFiles\moc_MonsterDropInfoItem.cpp">
+      <Filter>Generated Files\temp\GeneratedFiles</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
     <CustomBuild Include="DropEditWidget.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="MonsterDropInfoItem.ui">
       <Filter>Form Files</Filter>
     </CustomBuild>
   </ItemGroup>

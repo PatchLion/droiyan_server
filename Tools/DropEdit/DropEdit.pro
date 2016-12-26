@@ -21,12 +21,9 @@ win32{
 }
 
 
-SOURCES += ./*.cpp \
-    MonsterDropInfoItem.cpp
+SOURCES += ./*.cpp
 
-FORMS +=./*.ui \
-    MonsterDropInfoItem.ui
+FORMS +=./*.ui
 
 HEADERS += ./*.h \
-                        ../../Server/Server/sources/NpcItem.h \
-    MonsterDropInfoItem.h
+          ../../Server/Server/sources/NpcItem.h

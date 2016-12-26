@@ -142,6 +142,9 @@
     <ClCompile Include="Functions.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="MonsterDropInfoItem.cpp" />
+  </ItemGroup>
+  <ItemGroup>
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -165,11 +168,11 @@
   <ItemGroup>
     <CustomBuild Include="DropEditWidget.h">
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">DropEditWidget.h;%(AdditionalInputs)</AdditionalInputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\temp\GeneratedFiles\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DTOOL_CODE -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -DNDEBUG  "-I.\temp\GeneratedFiles" "-I." "-I.\..\..\Server\Server\sources" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DTOOL_CODE -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1800 -D_WIN32 -IC:/Qt/Qt5.3.2_32/5.3/msvc2013/mkspecs/win32-msvc2013 -ID:/projects/d_server_sources/Tools/DropEdit -ID:/projects/d_server_sources/Tools/DropEdit/temp/GeneratedFiles -ID:/projects/d_server_sources/Tools/DropEdit -ID:/projects/d_server_sources/Server/Server/sources -IC:/Qt/Qt5.3.2_32/5.3/msvc2013/include -IC:/Qt/Qt5.3.2_32/5.3/msvc2013/include/QtWidgets -IC:/Qt/Qt5.3.2_32/5.3/msvc2013/include/QtGui -IC:/Qt/Qt5.3.2_32/5.3/msvc2013/include/QtANGLE -IC:/Qt/Qt5.3.2_32/5.3/msvc2013/include/QtCore DropEditWidget.h -o temp\GeneratedFiles\moc_DropEditWidget.cpp</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC DropEditWidget.h</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">temp\GeneratedFiles\moc_DropEditWidget.cpp;%(Outputs)</Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">DropEditWidget.h;%(AdditionalInputs)</AdditionalInputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\temp\GeneratedFiles\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DTOOL_CODE -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE  "-I.\temp\GeneratedFiles" "-I." "-I.\..\..\Server\Server\sources" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DTOOL_CODE -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1800 -D_WIN32 -IC:/Qt/Qt5.3.2_32/5.3/msvc2013/mkspecs/win32-msvc2013 -ID:/projects/d_server_sources/Tools/DropEdit -ID:/projects/d_server_sources/Tools/DropEdit/temp/GeneratedFiles -ID:/projects/d_server_sources/Tools/DropEdit -ID:/projects/d_server_sources/Server/Server/sources -IC:/Qt/Qt5.3.2_32/5.3/msvc2013/include -IC:/Qt/Qt5.3.2_32/5.3/msvc2013/include/QtWidgets -IC:/Qt/Qt5.3.2_32/5.3/msvc2013/include/QtGui -IC:/Qt/Qt5.3.2_32/5.3/msvc2013/include/QtANGLE -IC:/Qt/Qt5.3.2_32/5.3/msvc2013/include/QtCore DropEditWidget.h -o temp\GeneratedFiles\moc_DropEditWidget.cpp</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC DropEditWidget.h</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">temp\GeneratedFiles\moc_DropEditWidget.cpp;%(Outputs)</Outputs>
     </CustomBuild>
@@ -193,10 +196,43 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <CustomBuild Include="MonsterDropInfoItem.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MonsterDropInfoItem.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DTOOL_CODE -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1800 -D_WIN32 -IC:/Qt/Qt5.3.2_32/5.3/msvc2013/mkspecs/win32-msvc2013 -ID:/projects/d_server_sources/Tools/DropEdit -ID:/projects/d_server_sources/Tools/DropEdit/temp/GeneratedFiles -ID:/projects/d_server_sources/Tools/DropEdit -ID:/projects/d_server_sources/Server/Server/sources -IC:/Qt/Qt5.3.2_32/5.3/msvc2013/include -IC:/Qt/Qt5.3.2_32/5.3/msvc2013/include/QtWidgets -IC:/Qt/Qt5.3.2_32/5.3/msvc2013/include/QtGui -IC:/Qt/Qt5.3.2_32/5.3/msvc2013/include/QtANGLE -IC:/Qt/Qt5.3.2_32/5.3/msvc2013/include/QtCore MonsterDropInfoItem.h -o temp\GeneratedFiles\moc_MonsterDropInfoItem.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC MonsterDropInfoItem.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">temp\GeneratedFiles\moc_MonsterDropInfoItem.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MonsterDropInfoItem.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DTOOL_CODE -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1800 -D_WIN32 -IC:/Qt/Qt5.3.2_32/5.3/msvc2013/mkspecs/win32-msvc2013 -ID:/projects/d_server_sources/Tools/DropEdit -ID:/projects/d_server_sources/Tools/DropEdit/temp/GeneratedFiles -ID:/projects/d_server_sources/Tools/DropEdit -ID:/projects/d_server_sources/Server/Server/sources -IC:/Qt/Qt5.3.2_32/5.3/msvc2013/include -IC:/Qt/Qt5.3.2_32/5.3/msvc2013/include/QtWidgets -IC:/Qt/Qt5.3.2_32/5.3/msvc2013/include/QtGui -IC:/Qt/Qt5.3.2_32/5.3/msvc2013/include/QtANGLE -IC:/Qt/Qt5.3.2_32/5.3/msvc2013/include/QtCore MonsterDropInfoItem.h -o temp\GeneratedFiles\moc_MonsterDropInfoItem.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC MonsterDropInfoItem.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">temp\GeneratedFiles\moc_MonsterDropInfoItem.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
     <ClCompile Include="temp\GeneratedFiles\moc_DropEditWidget.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="temp\GeneratedFiles\moc_MonsterDropInfoItem.cpp" />
+  </ItemGroup>
+  <ItemGroup>
     <CustomBuild Include="temp\GeneratedFiles\ui_DropEditWidget.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="temp\GeneratedFiles\ui_MonsterDropInfoItem.h">
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
       </Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
@@ -226,11 +262,24 @@
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">temp\GeneratedFiles\ui_DropEditWidget.h;%(Outputs)</Outputs>
     </CustomBuild>
   </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="MonsterDropInfoItem.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MonsterDropInfoItem.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe MonsterDropInfoItem.ui -o temp\GeneratedFiles\ui_MonsterDropInfoItem.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC MonsterDropInfoItem.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">temp\GeneratedFiles\ui_MonsterDropInfoItem.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MonsterDropInfoItem.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe MonsterDropInfoItem.ui -o temp\GeneratedFiles\ui_MonsterDropInfoItem.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC MonsterDropInfoItem.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">temp\GeneratedFiles\ui_MonsterDropInfoItem.h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties Qt5Version_x0020_Win32="5.3.2_32_noopengl" />
+      <UserProperties Qt5Version_x0020_Win32="msvc2013_32" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

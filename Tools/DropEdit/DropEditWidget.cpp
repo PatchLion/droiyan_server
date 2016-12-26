@@ -1,7 +1,11 @@
 #include "DropEditWidget.h"
 #include "ui_DropEditWidget.h"
 #include <QtCore>
+#include <QtWidgets>
 #include "Functions.h"
+#include "MonsterDropInfoItem.h"
+
+#define INDEX_TEXT(index, total) QString("%1 / %2").arg(index + 1).arg(total)
 
 CDropEditWidget::CDropEditWidget(QWidget *parent) :
     QWidget(parent),
@@ -9,9 +13,7 @@ CDropEditWidget::CDropEditWidget(QWidget *parent) :
 {
     ui->setupUi(this);
 
-	initDropInfos();
-
-	updateDropInfoListOnUI();
+	onIndexChanged();
 }
 
 CDropEditWidget::~CDropEditWidget()
@@ -19,14 +21,16 @@ CDropEditWidget::~CDropEditWidget()
     delete ui;
 }
 
-void CDropEditWidget::initDropInfos()
+void CDropEditWidget::initDropInfos(const QString& rootDir)
 {
 	MapKey monsterKeyMap;
 	MapKey itemKeyMap;
 
+	ui->widgetMonsterDrop->clear();
 	m_listDropInfo.clear();
+	ui->listWidget->clear();
 
-	const QString root_path = QApplication::applicationDirPath() + "/drop";
+	const QString root_path = rootDir;
 
 	QDir dir(root_path);
 	QFileInfoList filelist = dir.entryInfoList(QDir::Files);
@@ -45,8 +49,14 @@ void CDropEditWidget::initDropInfos()
 		else
 		{
 			refreshMonsterAndItemKeyMap(dropInfo, monsterKeyMap, itemKeyMap);
-			m_listDropInfo << dropInfo;
+			stDropInfo temp(dropInfo);
+			temp.originFile = fileinfo.absoluteFilePath();
+			m_listDropInfo << temp;
+
+			ui->listWidget->addItem(QString::fromLocal8Bit(dropInfo.name));
 		}
+
+		
 	}
 
 	qDebug() << "Read finished, total: " << m_listDropInfo.size();
@@ -58,43 +68,9 @@ void CDropEditWidget::initDropInfos()
 
 void CDropEditWidget::updateDropInfoListOnUI()
 {
-	/*ui->treeWidget->clear();
+	m_currentIndex = 0;
 
-	ui->treeWidget->setWindowTitle("Drops");
-
-	char name[64]; //怪物名称
-	byte code1;//怪物种类
-	byte code2;
-	int money;//掉钱数量
-	int DropLeechdom;//掉药品几率
-	int DropNovelity;//掉物品几率
-	int n; //物品种类数量
-
-	//设定头项名称	
-	QStringList listHead;
-	listHead << QString::fromLocal8Bit("怪物名称");
-	listHead << QString::fromLocal8Bit("怪物代码");
-	listHead << QString::fromLocal8Bit("掉落金钱");
-	listHead << QString::fromLocal8Bit("药品(几率)");
-	listHead << QString::fromLocal8Bit("物品(几率)");
-	listHead << QString::fromLocal8Bit("物品数量");
-	listHead << QString::fromLocal8Bit("物品名称");
-	listHead << QString::fromLocal8Bit("物品代码");
-	listHead << QString::fromLocal8Bit("掉落几率");
-	ui->treeWidget->setHeaderLabels(listHead);
-	//设定各个项  
-	QTreeWidgetItem* A = new QTreeWidgetItem(QStringList() << "A");
-	A->setIcon(0, QIcon("images/data.png"));
-	A->setCheckState(0, Qt::Checked);
-	QTreeWidgetItem* B = new QTreeWidgetItem(QStringList() << "B");
-	B->setIcon(0, QIcon("images/decision.png"));
-	B->setCheckState(0, Qt::Checked);
-	QTreeWidgetItem* C = new QTreeWidgetItem(QStringList() << "C");
-	C->setIcon(0, QIcon("images/process.png"));
-	C->setCheckState(0, Qt::Checked);
-	treeWidget->addTopLevelItem(A);
-	treeWidget->addTopLevelItem(B);
-	treeWidget->addTopLevelItem(C);*/
+	onIndexChanged();
 }
 
 bool CDropEditWidget::refreshMonsterAndItemKeyMap(const drop_info& dropinfo, MapKey& monsterMap, MapKey& itemMap)
@@ -167,4 +143,80 @@ bool CDropEditWidget::outputMapKeyToFile(const QString& filepath, const MapKey& 
 	}
 
 	return true;
+}
+
+void CDropEditWidget::onIndexChanged()
+{
+	if (m_listDropInfo.isEmpty())
+	{
+		ui->labelIndex->setText(INDEX_TEXT(-1, 0));
+		ui->pushButtonNext->setEnabled(false);
+		ui->pushButtonPer->setEnabled(false);
+		ui->labelCurrentFileName->clear();
+	}
+	else
+	{
+		ui->labelIndex->setText(INDEX_TEXT(m_currentIndex, m_listDropInfo.size()));
+		if (m_currentIndex <= 0)
+		{
+			ui->pushButtonPer->setEnabled(false);
+		}
+		else
+		{
+			ui->pushButtonPer->setEnabled(true);
+		}
+		if (m_currentIndex >= (m_listDropInfo.size() - 1))
+		{
+			ui->pushButtonNext->setEnabled(false);
+		}
+		else
+		{
+			ui->pushButtonNext->setEnabled(true);
+		}
+
+		if (m_currentIndex >= 0 && m_currentIndex < m_listDropInfo.size())
+		{
+			ui->widgetMonsterDrop->initWithData(m_listDropInfo[m_currentIndex]);
+		}
+
+		ui->labelCurrentFileName->setText(QFileInfo(m_listDropInfo[m_currentIndex].originFile).fileName());
+	}
+}
+
+void CDropEditWidget::on_pushButtonNext_clicked(bool checked)
+{
+	if (m_currentIndex < (m_listDropInfo.size() - 1))
+	{
+		m_currentIndex++;
+	}
+	onIndexChanged();
+}
+
+void CDropEditWidget::on_pushButtonPre_clicked(bool checked)
+{
+	if (m_currentIndex > 0)
+	{
+		m_currentIndex--;
+	}
+	onIndexChanged();
+}
+
+void CDropEditWidget::on_listWidget_currentRowChanged(int currentRow)
+{
+	m_currentIndex = currentRow;
+	onIndexChanged();
+}
+
+void CDropEditWidget::on_pushButtonSelect_clicked(bool checked)
+{
+	const QString root_dir = QFileDialog::getExistingDirectory(this, "Drop Root Directory", QApplication::applicationDirPath());
+
+	if (!root_dir.isEmpty())
+	{
+		initDropInfos(root_dir);
+
+		updateDropInfoListOnUI();
+
+		ui->labelRootPath->setText(root_dir);
+	}
 }

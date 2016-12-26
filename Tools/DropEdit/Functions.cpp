@@ -25,15 +25,15 @@ bool DropEdit::getDropInfoFromINIFile(const QString& filepath, drop_info& dropIt
 	{
 		return false;
 	}
-
-	const QString fileName = QFileInfo(filepath).baseName().trimmed();
+	QFileInfo fileInfo(filepath);
+	const QString fileName = fileInfo.fileName().trimmed().replace("." + fileInfo.suffix().trimmed(), "");
 
 	strcpy(dropItem.name, fileName.toLocal8Bit().data());
 	dropItem.code1 = listInfo[0].trimmed().toUShort();
 	dropItem.code2 = listInfo[1].trimmed().toUShort();
-	dropItem.money = listInfo[2].trimmed().toInt();
 	dropItem.DropLeechdom = listInfo[3].trimmed().toInt();
-	dropItem.DropNovelity = listInfo[4].trimmed().toInt();
+	dropItem.DropNovelity = listInfo[2].trimmed().toInt();
+	dropItem.money = listInfo[4].trimmed().toInt();
 	dropItem.n = listInfo[5].trimmed().toInt();
 
 	for (int i = 0; i < dropItem.n; i++){
