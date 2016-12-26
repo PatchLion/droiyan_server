@@ -1,0 +1,18 @@
+/w - 显示在线人数
+/forcequit [玩家名字] - 踢掉玩家
+/traceuser [玩家名字] - 飞到玩家身边
+/tracenpc [NPC名字] - 飞到npc身边
+/announce [公告内容] - 公告
+/forceallquit - 踢掉所有玩家
+/experience - 关于经验（未测试过）
+/call [name] - 召唤玩家到身边
+/cloakon - 隐身
+/cloakoff - 现身
+/sav - 保存玩家信息
+/link z x y - 进入地图 (/link 400 200 500)
+/p - Turns potion interface on and off
+/r - 显示资源 
+/view name - 观看角色资料
+/mopcall [mob name] [coords] - 召唤怪物 (/mopcall Elenna 20 20)
+
+/双倍经验 （开启和关闭双倍经验）

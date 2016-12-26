@@ -1,0 +1,15 @@
+STORE_REPAIR  物品修理管理  商店编号 物品编号
+GameUser 人物表，
+JifenShop 现在的决战币商城 编号 物品编号 物品名字 等级 耐久 没用的 颜色 价格 数量这个1 属性 1 2 3 4 5 改数 幻属性 1 2 3 4 5 
+Mark_ChouJiang抽奖控制表
+MarkOLShop 这个是 元宝的商店，内容和 游戏币的一样
+USER_BANK  个人银行strAccount 人物名字 iDN 银行存款 strItem银行物品，这个不用修改 进制码的
+ACCOUNT_BANK  综合银行strAccount 人物名字 iDN 钱数 strItem 综合银行的物品，进制码不要改
+CHARS   人物数据查询 strAccount 账号 strChar01 较色1 strChar02 角色2 strChar03 角色3 sCharNum 创建了几个角色
+GUILD 军团表
+GUILD_FORTRESS 要塞时间控制表
+ITEM  物品表
+LEVEL_UP 升级要求经验
+NPC  npc表
+MONSTER_POS 刷怪 刷npc表
+MONSTER 怪物表

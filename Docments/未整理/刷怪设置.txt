@@ -1,0 +1,9 @@
+drgame数据库里MONSTER增加你要加的怪物
+然后去MONSTER_POS刷怪物的地点.可以随便复制一个别的怪物,然后粘贴一下
+把在MONSTER增加的怪物编号设置到 MONSTER_POS 就可以了
+sSid = 怪物编号
+strName = 地图显示门的地方
+sZone = 地图位置
+sX = 横坐标
+Sy = 竖坐标
+sRegenTime = 怪物死后多久复活 1000=1分钟

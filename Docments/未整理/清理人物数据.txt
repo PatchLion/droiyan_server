@@ -1,0 +1,24 @@
+一般在GM内部测试完毕后都会留好多残留日志和一些数据
+为了不让这些数据保存到开F`也避免还原数据库
+
+ 
+
+使用SQL清理用语是最简单而且方便的
+有些GM是新手`对SQL的操作很是不了解`也造成了好多疑难之处
+希望我的这篇文章能给您带来帮助！
+
+清理角色相关：drgame数据库
+delete from account_bank
+delete from chars
+delete from event_user 
+delete from gameuser 
+delete from fortress_1_war_list 
+delete from guild
+delete from user_bank 
+delete from operator_log 
+
+清理账号相关：droiyan数据库
+delete from everlog
+delete from ngscuser
+delete from session_block_user
+

@@ -1,0 +1,41 @@
+将2区和到1区
+1区简称A   2区简称B
+第一步：
+在B的droiyan数据库 右键--所有任务--倍份数据库--（找个新空的文件夹保存）选中
+
+
+在B的drgame数据库 右键--所有任务--倍份数据库--（找个新空的文件夹保存）选中
+
+将这两个倍份的数据库复制到A服务器上
+然后新建立新的数据库
+在点还原数据库到里面
+
+第二步：-------找个就是要改的区名字的！！
+将这两个倍份数据库放到A服务器
+
+先建立新的数据库（droiyan-2 drgame-2）
+
+在droiyan 分析执行
+update NGSCUSER set strUserID=strUserID + '-1'
+
+在drgame 分析执行
+update ACCOUNT_BANK set strAccount=strAccount + '-1'
+update CHARS set strAccount=strAccount + '-1'
+update CHARS set strChar01=strChar01 + '[A]'
+update CHARS set strChar02=strChar02 + '[A]'
+update CHARS set strChar03=strChar03 + '[A]'
+update GameUser set strUserID=strUserID + '[A]'
+update USER_BANK set strAccount=strAccount + '[A]'
+
+第三步
+
+打开A服务器的帐号数据库！
+打开droiyan ！！右键（表）选择所有任务！！---导入（B复制来的）(droiyan2)数据——注意：从那来的数据，和保存到A帐号数据库内（droiyan）！！在NGSCUSER打√
+
+第四步
+
+打开A服务器的角色数据库
+打开laolei！！！右键（表）选择所有任务！！---导入（B复制来的）(drgame2)数据——注意：从那来的数据，和保存到A帐号数据库内（drgame）！！在GameUser  USER_BANK  CHARS  ACCOUNT_BANK  这四个都打 √
+
+上做完后，检查 角色和帐号 是否合区成功
+完美合区后-删除新建立的  droiyan2  drgame2 二个数据库

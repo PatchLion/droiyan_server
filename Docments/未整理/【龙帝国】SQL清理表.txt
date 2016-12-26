@@ -1,0 +1,21 @@
+清理角色相关：drgame数据库
+
+delete from account_bank
+delete from chars
+delete from event_user 
+delete from gameuser 
+delete from fortress_1_war_list 
+delete from guild
+delete from user_bank 
+delete from operator_log
+delete from GUILD_USER
+delete from BBS_1
+delete from BBS_1000
+delete from BBS_1001
+
+清理账号相关：droiyan数据库
+
+delete from everlog
+delete from ngscuser
+delete from session_block_user
+

@@ -1,0 +1,51 @@
+下面的这些口令,完全是方便大家合区使用
+这样可以在半个小时 就把两个区合并.
+不过第一次使用的时候请先备份数据库,以免不必要的损失
+
+2区账号
+update NGSCUSER set stRUSERID=stRUSERID+'-02'
+3区账号
+update NGSCUSER set stRUSERID=stRUSERID+'-03'
+说明:例如:1区账号是123456 2区账号也是123456 使用改语句 就可以让账号后+-02
+    使用后效果1区账号123456-02 2区账号123456-03
+
+2区综合仓库
+update ACCOUNT_BANK set strAccount=strAccount+'-02'
+3区综合仓库
+update ACCOUNT_BANK set strAccount=strAccount+'-03'
+
+2区帐号信息
+update CHARS set strAccount=strAccount+'-02'
+update CHARS set strChar01=strChar01+'[A]'
+WHERE (StrChar01 <> 'NULL')
+update CHARS set strChar02=strChar02+'[A]'
+WHERE (StrChar02 <> 'NULL')
+update CHARS set strChar03=strChar03+'[A]'
+WHERE (StrChar03 <> 'NULL')
+
+3区帐号信息
+update CHARS set strAccount=strAccount+'-03'
+update CHARS set strChar01=strChar01+'[B]'
+WHERE (StrChar01 <> 'NULL')
+update CHARS set strChar02=strChar02+'[B]'
+WHERE (StrChar02 <> 'NULL')
+update CHARS set strChar03=strChar03+'[B]'
+WHERE (StrChar03 <> 'NULL')
+
+2区100帐号
+update EVER_USER set strUserID=strUserID+'[A]'
+3区100帐号
+update EVER_USER set strUserID=strUserID+'[B]'
+
+2区角色信息
+update GameUser set strUserID=strUserID+'[A]'
+3区角色信息
+update GameUser set strUserID=strUserID+'[B]'
+
+2区个人仓库
+update USER_BANK set strAccount=strAccount+'[A]'
+3区个人仓库
+update USER_BANK set strAccount=strAccount+'[B]'
+
+把drgame里面的人物数据库整理完毕后.就开始把1区或者2区其中一个备份
+开始导入一种的一个区  这样,两个区就合并完成了

@@ -1,0 +1,36 @@
+角色帐号清理方法
+选中drgame库，然后打开工具选择SQL查询分析器
+在里面输入
+delete from account_bank
+delete from chars
+delete from event_user 
+delete from gameuser 
+delete from fortress_1_war_list
+delete from fortress_2_war_list 
+delete from fortress_3_war_list 
+delete from guild
+delete from user_bank 
+delete from user_bank_del
+delete from operator_log
+delete from GUILD_USER
+delete from MAIL
+delete from BBS_1
+delete from BBS_1000
+delete from BBS_1001
+delete from BBS_1002
+delete from BBS_101
+delete from BBS_102
+delete from BBS_103
+delete from BBS_104
+delete from BBS_105
+delete from BBS_106
+delete from BBS_2
+delete from DEATH_LOG
+然后右键执行
+
+切换到droiyan库
+输入
+delete from everlog
+delete from ngscuser
+delete from session_block_use
+执行

@@ -1,0 +1,3 @@
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager
+
+按右键新建一个DWORD值 名称：SafeDLLSearchMode 值：0 

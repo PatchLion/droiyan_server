@@ -1,0 +1,6 @@
+sAI代表怪物的功击方式(设置为1=只有人物功击怪物后怪物才会反功人物)
+sAttackDelay代表怪物的功击速度
+byDefense代表怪物的防御
+byax/byay/byaz这三个代表怪物的功击力
+sStandTime代表怪物的移动速度
+sSpeed代表怪物追着人物进行功击时走动的速度

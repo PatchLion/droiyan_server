@@ -1,0 +1,30 @@
+WIN7请安装虚拟机XP
+1.下载并安装 SQL2000
+2.下载并安装 决战8.0客户端
+3.复制登陆补丁到客户端
+4.修改数据库SA密码 例:sa   [sa密码修改见图片]
+5.启动一键安装工具,并运行(出现连接数据库失败,看附1)
+6.运行登陆器 进入游戏
+
+
+附1MM.一键安装工具[连接本地数据库失败]
+在运行中输入regedit打开注册表编辑器，找到[HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\MSSQLSERVER\MSSQLSERVER]
+这个项里面有一个键值LoginMode，默认下，值是1，现在将值改为2，重启电脑。
+
+
+附2MM.修改登陆器IP
+打开hnserver.ini即可修改
+
+
+
+
+8.0决战下载地址:
+http://pan.baidu.com/share/link?shareid=253387&uk=1761801024
+
+XP请安装Microsoft SQL Server 2000 (MSSQL) PersonalEdition中文个人版本而不是服务器版的数据库
+下载链接:
+http://www.52z.com/soft/14105.html
+安装时记得设置sa帐户的密码
+
+
+决战研究超级群17429026【验证内容：决战】

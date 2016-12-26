@@ -1,0 +1,98 @@
+/giveme 961 1 2 9 30 6 12 18 666守护
+/giveme 954 1 2 9 6 6 12 18 666武器守护
+/giveme 877 1 0 2 14 14 14 14 14 释放机械
+/giveme 889 1 0 2 58 * * * * 速度机械
+刷装备命令如：
+/giveme 444 1 10 3 131 131 131 131 (一把耐久垃圾反三)
+/给我|反三|一把|10改|黄字|属性|属性|属性|属性|
+GameUser表详解
+strUserID 游戏角色
+sSTR 总力量点数
+sCON 总体质点数
+sDEX 总敏捷点数
+sVOL 总智慧点数
+sWIS 总智力点数
+iSkin 皮肤
+iHair 头发
+sGender 性别
+strFace 脸形
+sLZ 伤害力Z
+sLX 伤害力X 最小为sLZ+sLZX 最大为sLZ+sLZY
+sLY 伤害力Y
+iBuddy 配偶
+iGuild 军团
+iExp 经验
+sPA 杀人数
+sSkillpooint 剩余技能点数
+iXP 战斗经验
+aMaxHP 最大血值
+sHP 目前血值
+sMaxPP 最大体力值
+sPP 目前体力值
+sMaxSP 最大精神值
+sSP 目前精神值
+iDN 金币
+sCityRank 市民等级 配合sCityValue使用
+sLevel 等级
+sCityValue 市民经验
+
+/w - 显示在线人数
+/forcequit [name] - 踢掉玩家
+/traceuser [name] - 飞到玩家身边
+/tracenpc [name] - 飞到npc身边
+/announce [test] - 公告
+/forceallquit - 踢掉所有玩家
+/experience - 关于经验（未测试过）
+/call [name] - 召唤玩家到身边
+/cloakon - go invisible
+/cloakoff - go visible
+/sav - 保存玩家信息
+/link z x y - 进入地图 (e.g /link 400 200 500)
+/p - Turns potion interface on and off
+/r - 显示资源 
+/view name - 观看角色资料
+/mopcall [mob name] [coords] - 召唤怪物
+
+ 
+
+(e.g /mopcall Elenna 20 20)
+
+/双倍经验 （开启和关闭双倍经验）
+ 
+不确定的命令:
+/killmonster [ID] - 杀死怪物
+/monsterinfo [name] (怪物信息)
+/fortresstime (fortress start time?)
+/rrforcestart
+
+/throwindex [text??]
+
+设置GM
+
+在drgame数据库的gameuser里人物表的tIsOP改为1就是GM。0为取消GM
+
+决战修改商店物品
+
+在drgame数据库里面.有一个表叫"STORE"的..里面就是掌管物品的买卖
+
+第一列sStoreID是指商店种类:第二列是物品代码..
+
+ 
+
+根据物品代码所属来分开武器\医院还有其他的
+
+物品代码在drgame里面的ITEM里面有.第一列sSid就是物品代码
+
+ 
+
+~iDN是指商品在NPC出售的价格,可以根据自己需求来调整大小
+
+ 
+
+游戏里面.平民买东西是原价买的..圣人是减少10%的价格来购买
+
+sDuration是指物品的耐久度..如果有东西最大耐久度为10(如电光板)
+
+ 
+
+但sDuration这里是0的话.把0变为10就可以使用了
