@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Release|Win32">
@@ -16,7 +16,7 @@
     <Keyword>Qt4VSv1.0</Keyword>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
-  <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;" Label="Configuration">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <PlatformToolSet>v120</PlatformToolSet>
     <OutputDirectory>bin\</OutputDirectory>
     <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
@@ -25,7 +25,7 @@
     <IntermediateDirectory>temp\$(Platform)\$(Configuration)\</IntermediateDirectory>
     <PrimaryOutput>GMTool</PrimaryOutput>
   </PropertyGroup>
-  <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;" Label="Configuration">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <PlatformToolSet>v120</PlatformToolSet>
     <OutputDirectory>bin\</OutputDirectory>
     <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
@@ -36,27 +36,27 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings" />
-  <ImportGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;" Label="PropertySheets">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
   </ImportGroup>
-  <ImportGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;" Label="PropertySheets">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
-    <OutDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">bin\</OutDir>
-    <IntDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">temp\$(Platform)\$(Configuration)\</IntDir>
-    <TargetName Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">GMTool</TargetName>
-    <IgnoreImportLibrary Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</IgnoreImportLibrary>
-    <LinkIncremental Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">false</LinkIncremental>
-    <OutDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">bin\</OutDir>
-    <IntDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">temp\$(Platform)\$(Configuration)\</IntDir>
-    <TargetName Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">GMTool</TargetName>
-    <IgnoreImportLibrary Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</IgnoreImportLibrary>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">temp\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">GMTool</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">temp\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">GMTool</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IgnoreImportLibrary>
   </PropertyGroup>
-  <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>&quot;temp\GeneratedFiles&quot;;&quot;QxOrm\include&quot;;&quot;sources&quot;;&quot;C:\Qt\Qt5.3.2_32_onopengl\5.3\msvc2013\include&quot;;&quot;C:\Qt\Qt5.3.2_32_onopengl\5.3\msvc2013\include\QtWidgets&quot;;&quot;C:\Qt\Qt5.3.2_32_onopengl\5.3\msvc2013\include\QtSql&quot;;&quot;C:\Qt\Qt5.3.2_32_onopengl\5.3\msvc2013\include\QtGui&quot;;&quot;C:\Qt\Qt5.3.2_32_onopengl\5.3\msvc2013\include\QtANGLE&quot;;&quot;C:\Qt\Qt5.3.2_32_onopengl\5.3\msvc2013\include\QtCore&quot;;&quot;temp\GeneratedFiles&quot;;&quot;temp\GeneratedFiles&quot;;C:\Qt\Qt5.3.2_32_onopengl\5.3\msvc2013\mkspecs\win32-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>temp\GeneratedFiles;QxOrm\include;sources;$(QTDIR)\include;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtSql;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtCore;temp\GeneratedFiles;temp\GeneratedFiles;$(QTDIR)\mkspecs\win32-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>-Zm200 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
       <AssemblerListingLocation>temp\$(Platform)\$(Configuration)\</AssemblerListingLocation>
       <BrowseInformation>false</BrowseInformation>
@@ -66,7 +66,8 @@
       <Optimization>MaxSpeed</Optimization>
       <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_SQL_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_OPENGL_ES_2;QT_OPENGL_ES_2_ANGLE;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PreprocessToFile>false</PreprocessToFile>
-      <ProgramDataBaseFileName></ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>
+      </ProgramDataBaseFileName>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -74,9 +75,9 @@
       <WarningLevel>Level3</WarningLevel>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>C:\Qt\Qt5.3.2_32_onopengl\5.3\msvc2013\lib\qtmain.lib;QxOrm.lib;C:\Qt\Qt5.3.2_32_onopengl\5.3\msvc2013\lib\Qt5Widgets.lib;C:\Qt\Qt5.3.2_32_onopengl\5.3\msvc2013\lib\Qt5Sql.lib;C:\Qt\Qt5.3.2_32_onopengl\5.3\msvc2013\lib\Qt5Gui.lib;C:\Qt\Qt5.3.2_32_onopengl\5.3\msvc2013\lib\Qt5Core.lib;libEGL.lib;libGLESv2.lib;gdi32.lib;user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Qt\Qt5.3.2_32_onopengl\5.3\msvc2013\lib;.\QxOrm\lib\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalOptions>&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot; %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>qtmain.lib;QxOrm.lib;Qt5Widgets.lib;Qt5Sql.lib;Qt5Gui.lib;Qt5Core.lib;libEGL.lib;libGLESv2.lib;gdi32.lib;user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;.\QxOrm\lib\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
       <DataExecutionPrevention>true</DataExecutionPrevention>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreImportLibrary>true</IgnoreImportLibrary>
@@ -95,9 +96,9 @@
       <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_SQL_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_OPENGL_ES_2;QT_OPENGL_ES_2_ANGLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>&quot;temp\GeneratedFiles&quot;;&quot;QxOrm\include&quot;;&quot;sources&quot;;&quot;C:\Qt\Qt5.3.2_32_onopengl\5.3\msvc2013\include&quot;;&quot;C:\Qt\Qt5.3.2_32_onopengl\5.3\msvc2013\include\QtWidgets&quot;;&quot;C:\Qt\Qt5.3.2_32_onopengl\5.3\msvc2013\include\QtSql&quot;;&quot;C:\Qt\Qt5.3.2_32_onopengl\5.3\msvc2013\include\QtGui&quot;;&quot;C:\Qt\Qt5.3.2_32_onopengl\5.3\msvc2013\include\QtANGLE&quot;;&quot;C:\Qt\Qt5.3.2_32_onopengl\5.3\msvc2013\include\QtCore&quot;;&quot;temp\GeneratedFiles&quot;;&quot;temp\GeneratedFiles&quot;;C:\Qt\Qt5.3.2_32_onopengl\5.3\msvc2013\mkspecs\win32-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>temp\GeneratedFiles;QxOrm\include;sources;$(QTDIR)\include;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtSql;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtCore;temp\GeneratedFiles;temp\GeneratedFiles;$(QTDIR)\mkspecs\win32-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>-Zm200 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
       <AssemblerListingLocation>temp\$(Platform)\$(Configuration)\</AssemblerListingLocation>
       <BrowseInformation>false</BrowseInformation>
@@ -114,9 +115,9 @@
       <WarningLevel>Level3</WarningLevel>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>C:\Qt\Qt5.3.2_32_onopengl\5.3\msvc2013\lib\qtmaind.lib;QxOrm.lib;C:\Qt\Qt5.3.2_32_onopengl\5.3\msvc2013\lib\Qt5Widgetsd.lib;C:\Qt\Qt5.3.2_32_onopengl\5.3\msvc2013\lib\Qt5Sqld.lib;C:\Qt\Qt5.3.2_32_onopengl\5.3\msvc2013\lib\Qt5Guid.lib;C:\Qt\Qt5.3.2_32_onopengl\5.3\msvc2013\lib\Qt5Cored.lib;libEGLd.lib;libGLESv2d.lib;gdi32.lib;user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Qt\Qt5.3.2_32_onopengl\5.3\msvc2013\lib;.\QxOrm\lib\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalOptions>&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot; %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>qtmaind.lib;QxOrm.lib;Qt5Widgetsd.lib;Qt5Sqld.lib;Qt5Guid.lib;Qt5Cored.lib;libEGLd.lib;libGLESv2d.lib;gdi32.lib;user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;.\QxOrm\lib\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
       <DataExecutionPrevention>true</DataExecutionPrevention>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreImportLibrary>true</IgnoreImportLibrary>
@@ -142,35 +143,55 @@
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="sources\GMMainWindow.h">
-      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">sources\GMMainWindow.h;%(AdditionalInputs)</AdditionalInputs>
-      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">C:\Qt\Qt5.3.2_32_onopengl\5.3\msvc2013\bin\moc.exe  -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1800 -D_WIN32 -IC:/Qt/Qt5.3.2_32_onopengl/5.3/msvc2013/mkspecs/win32-msvc2013 -IH:/git_repositories/d_server_sources/GMTool -IH:/git_repositories/d_server_sources/GMTool/temp/GeneratedFiles -IH:/git_repositories/d_server_sources/GMTool/QxOrm/include -IH:/git_repositories/d_server_sources/GMTool/sources -IC:/Qt/Qt5.3.2_32_onopengl/5.3/msvc2013/include -IC:/Qt/Qt5.3.2_32_onopengl/5.3/msvc2013/include/QtWidgets -IC:/Qt/Qt5.3.2_32_onopengl/5.3/msvc2013/include/QtSql -IC:/Qt/Qt5.3.2_32_onopengl/5.3/msvc2013/include/QtGui -IC:/Qt/Qt5.3.2_32_onopengl/5.3/msvc2013/include/QtANGLE -IC:/Qt/Qt5.3.2_32_onopengl/5.3/msvc2013/include/QtCore sources\GMMainWindow.h -o temp\GeneratedFiles\moc_GMMainWindow.cpp</Command>
-      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">MOC sources\GMMainWindow.h</Message>
-      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">temp\GeneratedFiles\moc_GMMainWindow.cpp;%(Outputs)</Outputs>
-      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">sources\GMMainWindow.h;%(AdditionalInputs)</AdditionalInputs>
-      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">C:\Qt\Qt5.3.2_32_onopengl\5.3\msvc2013\bin\moc.exe  -DUNICODE -DWIN32 -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1800 -D_WIN32 -IC:/Qt/Qt5.3.2_32_onopengl/5.3/msvc2013/mkspecs/win32-msvc2013 -IH:/git_repositories/d_server_sources/GMTool -IH:/git_repositories/d_server_sources/GMTool/temp/GeneratedFiles -IH:/git_repositories/d_server_sources/GMTool/QxOrm/include -IH:/git_repositories/d_server_sources/GMTool/sources -IC:/Qt/Qt5.3.2_32_onopengl/5.3/msvc2013/include -IC:/Qt/Qt5.3.2_32_onopengl/5.3/msvc2013/include/QtWidgets -IC:/Qt/Qt5.3.2_32_onopengl/5.3/msvc2013/include/QtSql -IC:/Qt/Qt5.3.2_32_onopengl/5.3/msvc2013/include/QtGui -IC:/Qt/Qt5.3.2_32_onopengl/5.3/msvc2013/include/QtANGLE -IC:/Qt/Qt5.3.2_32_onopengl/5.3/msvc2013/include/QtCore sources\GMMainWindow.h -o temp\GeneratedFiles\moc_GMMainWindow.cpp</Command>
-      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">MOC sources\GMMainWindow.h</Message>
-      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">temp\GeneratedFiles\moc_GMMainWindow.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">sources\GMMainWindow.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1800 -D_WIN32 -IC:/Qt/Qt5.3.2_32_onopengl/5.3/msvc2013/mkspecs/win32-msvc2013 -IH:/git_repositories/d_server_sources/GMTool -IH:/git_repositories/d_server_sources/GMTool/temp/GeneratedFiles -IH:/git_repositories/d_server_sources/GMTool/QxOrm/include -IH:/git_repositories/d_server_sources/GMTool/sources -IC:/Qt/Qt5.3.2_32_onopengl/5.3/msvc2013/include -IC:/Qt/Qt5.3.2_32_onopengl/5.3/msvc2013/include/QtWidgets -IC:/Qt/Qt5.3.2_32_onopengl/5.3/msvc2013/include/QtSql -IC:/Qt/Qt5.3.2_32_onopengl/5.3/msvc2013/include/QtGui -IC:/Qt/Qt5.3.2_32_onopengl/5.3/msvc2013/include/QtANGLE -IC:/Qt/Qt5.3.2_32_onopengl/5.3/msvc2013/include/QtCore sources\GMMainWindow.h -o temp\GeneratedFiles\moc_GMMainWindow.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC sources\GMMainWindow.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">temp\GeneratedFiles\moc_GMMainWindow.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">sources\GMMainWindow.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -D_MSC_VER=1800 -D_WIN32 -IC:/Qt/Qt5.3.2_32_onopengl/5.3/msvc2013/mkspecs/win32-msvc2013 -IH:/git_repositories/d_server_sources/GMTool -IH:/git_repositories/d_server_sources/GMTool/temp/GeneratedFiles -IH:/git_repositories/d_server_sources/GMTool/QxOrm/include -IH:/git_repositories/d_server_sources/GMTool/sources -IC:/Qt/Qt5.3.2_32_onopengl/5.3/msvc2013/include -IC:/Qt/Qt5.3.2_32_onopengl/5.3/msvc2013/include/QtWidgets -IC:/Qt/Qt5.3.2_32_onopengl/5.3/msvc2013/include/QtSql -IC:/Qt/Qt5.3.2_32_onopengl/5.3/msvc2013/include/QtGui -IC:/Qt/Qt5.3.2_32_onopengl/5.3/msvc2013/include/QtANGLE -IC:/Qt/Qt5.3.2_32_onopengl/5.3/msvc2013/include/QtCore sources\GMMainWindow.h -o temp\GeneratedFiles\moc_GMMainWindow.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC sources\GMMainWindow.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">temp\GeneratedFiles\moc_GMMainWindow.cpp;%(Outputs)</Outputs>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="temp\GeneratedFiles\moc_GMMainWindow.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="temp\GeneratedFiles\ui_GMMainWindow.h" />
+    <CustomBuild Include="temp\GeneratedFiles\ui_GMMainWindow.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="sources\GMMainWindow.ui">
       <FileType>Document</FileType>
-      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">sources\GMMainWindow.ui;%(AdditionalInputs)</AdditionalInputs>
-      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">C:\Qt\Qt5.3.2_32_onopengl\5.3\msvc2013\bin\uic.exe sources\GMMainWindow.ui -o temp\GeneratedFiles\ui_GMMainWindow.h</Command>
-      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">UIC sources\GMMainWindow.ui</Message>
-      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">temp\GeneratedFiles\ui_GMMainWindow.h;%(Outputs)</Outputs>
-      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">sources\GMMainWindow.ui;%(AdditionalInputs)</AdditionalInputs>
-      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">C:\Qt\Qt5.3.2_32_onopengl\5.3\msvc2013\bin\uic.exe sources\GMMainWindow.ui -o temp\GeneratedFiles\ui_GMMainWindow.h</Command>
-      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">UIC sources\GMMainWindow.ui</Message>
-      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">temp\GeneratedFiles\ui_GMMainWindow.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">sources\GMMainWindow.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe sources\GMMainWindow.ui -o temp\GeneratedFiles\ui_GMMainWindow.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC sources\GMMainWindow.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">temp\GeneratedFiles\ui_GMMainWindow.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">sources\GMMainWindow.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe sources\GMMainWindow.ui -o temp\GeneratedFiles\ui_GMMainWindow.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC sources\GMMainWindow.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">temp\GeneratedFiles\ui_GMMainWindow.h;%(Outputs)</Outputs>
     </CustomBuild>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties Qt5Version_x0020_Win32="msvc2013_32" />
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Form Files">
@@ -56,6 +56,9 @@
     <CustomBuild Include="sources\GMMainWindow.h">
       <Filter>Header Files\sources</Filter>
     </CustomBuild>
+    <CustomBuild Include="temp\GeneratedFiles\ui_GMMainWindow.h">
+      <Filter>Generated Files\temp\GeneratedFiles</Filter>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Generated Files\temp" />
@@ -67,11 +70,6 @@
     <ClCompile Include="temp\GeneratedFiles\moc_GMMainWindow.cpp">
       <Filter>Generated Files\temp\GeneratedFiles</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="temp\GeneratedFiles\ui_GMMainWindow.h">
-      <Filter>Generated Files\temp\GeneratedFiles</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Form Files\sources" />

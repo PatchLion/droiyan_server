@@ -68,20 +68,31 @@ void CGMMainWindow::onConnectDBSelected(bool checked)
 			}
 
 			m_dbConnect.setDatabaseName(db_value);
-/*
-			dbconn.setDatabaseName(dsn);
-
-			dbconn.setHostName(QString("127.0.0.1"));
-
-			dbconn.setPort(1433);
-
-			dbconn.setUserName(QString("sa"));
-
-			dbconn.setPassword(QString("wang"));*/
+			m_dbConnect.setHostName(QString("192.168.5.103"));
+			m_dbConnect.setPort(1433);
+			m_dbConnect.setUserName(QString("sa"));
+			m_dbConnect.setPassword(QString("sa"));
 			bool r = m_dbConnect.open();
 
 			if (r) {
 				qDebug() << "SQL Server 2000 Connect OK!";
+
+
+				QSqlQuery query;
+				
+				if (!query.exec("SELECT Name FROM SysObjects Where XType='U' orDER BY Name"))
+				{
+					qWarning() << query.lastError().text();
+				}
+				
+				qDebug() << "size = " << query.at();
+
+				while (query.next())
+				{
+					QString name = query.value(0).toString();
+					qDebug() << name;
+				}
+				
 			}
 			else {
 				qDebug() << m_dbConnect.lastError().text();
@@ -99,7 +110,7 @@ void CGMMainWindow::onResetConfigFile(bool checked)
 	QSettings setting(configFilePath(), QSettings::IniFormat);
 	setting.beginGroup("Config");
 	setting.setValue("DB", "ODBC");
-	setting.setValue("VALUE", "DRIVER={SQL Server};Server=(192.168.10.145);Database=drgame;uid=drgame;pwd=drgame");
+	setting.setValue("VALUE", "DRIVER={SQL Server};Server=192.168.5.103;Database=drgame;uid=sa;pwd=sa");
 	setting.endGroup();
 }
 
