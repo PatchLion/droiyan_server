@@ -8,6 +8,18 @@
 #if _MSC_VER > 1000
 #pragma once
 #endif // _MSC_VER > 1000
+#ifdef TOOL_CODE
+#ifndef byte
+typedef unsigned char byte;
+#endif
+
+#ifndef SHORT
+typedef short               SHORT;
+#endif
+#ifndef BOOL
+typedef int               BOOL;
+#endif
+#endif
 
 class CNpcItem  
 {
