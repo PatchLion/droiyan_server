@@ -248,6 +248,8 @@ paket-files/
 
 # Qt
 *.pro.user
+moc_*.cpp
+ui_*.cpp
 
 # JetBrains Rider
 .idea/
