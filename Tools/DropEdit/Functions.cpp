@@ -31,8 +31,8 @@ bool DropEdit::getDropInfoFromINIFile(const QString& filepath, drop_info& dropIt
 	strcpy(dropItem.name, fileName.toLocal8Bit().data());
 	dropItem.code1 = listInfo[0].trimmed().toUShort();
 	dropItem.code2 = listInfo[1].trimmed().toUShort();
-	dropItem.DropLeechdom = listInfo[3].trimmed().toInt();
 	dropItem.DropNovelity = listInfo[2].trimmed().toInt();
+	dropItem.DropLeechdom = listInfo[3].trimmed().toInt();
 	dropItem.money = listInfo[4].trimmed().toInt();
 	dropItem.n = listInfo[5].trimmed().toInt();
 

@@ -37,15 +37,17 @@ protected:
 
 	void onIndexChanged();
 
+	bool writeDropInfoToFile(const drop_info& dropinfo, const QString& outputfile);
 protected Q_SLOTS:
 	void on_pushButtonNext_clicked(bool checked);
 	void on_pushButtonPre_clicked(bool checked);
 	void on_listWidget_currentRowChanged(int currentRow);
 	void on_pushButtonSelect_clicked(bool checked);
+	void on_pushButtonSave_clicked(bool checked);
 
 private:
     Ui::CDropEditWidget *ui;
-
+	QString m_rootDir;
 	int m_currentIndex;
 	ListDropInfo m_listDropInfo;
 };

@@ -40,6 +40,10 @@ struct drop_novelity {
 	int per;
 };
 struct drop_info {
+	drop_info()
+	{
+		n = 0;
+	}
 	char name[64]; //怪物名称
 	byte code1;//怪物种类
 	byte code2;

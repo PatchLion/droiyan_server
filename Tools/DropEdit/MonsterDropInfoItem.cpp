@@ -1,6 +1,6 @@
 #include "MonsterDropInfoItem.h"
 #include "ui_MonsterDropInfoItem.h"
-
+#include "PercentItemDelegate.h"
 #define COL_COUNT 3
 
 CMonsterDropInfoItem::CMonsterDropInfoItem(QWidget *parent) :
@@ -59,6 +59,7 @@ void CMonsterDropInfoItem::initWithData(const drop_info& info)
 		ui->tableWidget->setItem(i, 0, itemName);
 		ui->tableWidget->setItem(i, 1, itemCode);
 		ui->tableWidget->setItem(i, 2, itemPercent);
+		ui->tableWidget->setItemDelegateForColumn(2, new CPercentItemDelegate);
 	}
 }
 
@@ -76,6 +77,8 @@ void CMonsterDropInfoItem::clear()
 
 void CMonsterDropInfoItem::init()
 {
+	ui->spinBoxCount->setEnabled(false);
+
 	QStringList listHead;
 	listHead << QString::fromLocal8Bit("物品名称");
 	listHead << QString::fromLocal8Bit("物品代码");
@@ -84,4 +87,26 @@ void CMonsterDropInfoItem::init()
 	ui->tableWidget->setHorizontalHeaderLabels(listHead);
 
 	clear();
+}
+
+drop_info CMonsterDropInfoItem::dropInfo() const
+{
+	drop_info dropInfo = m_dropInfo;
+
+	dropInfo.DropLeechdom = ui->spinBoxMedicanPercent->value();
+	dropInfo.DropNovelity = ui->spinBoxItemPercent->value();
+	dropInfo.money = ui->spinBoxMoney->value();
+	dropInfo.n = ui->tableWidget->rowCount();
+
+	for (int i = 0; i < dropInfo.n; i++)
+	{
+		strcpy(dropInfo.novelity[i].name, ui->tableWidget->item(i, 0)->text().toLocal8Bit().data());
+		const QString code = ui->tableWidget->item(i, 1)->text();
+		const QStringList listCode = code.split("-");
+		dropInfo.novelity[i].code1 = listCode[0].trimmed().toInt();
+		dropInfo.novelity[i].code2 = listCode[1].trimmed().toInt();
+		dropInfo.novelity[i].per = ui->tableWidget->item(i, 2)->text().toInt();
+	}
+
+	return dropInfo;
 }

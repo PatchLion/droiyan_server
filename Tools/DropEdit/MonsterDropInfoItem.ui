@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>568</width>
+    <width>574</width>
     <height>202</height>
    </rect>
   </property>
@@ -255,6 +255,18 @@
         </item>
         <item>
          <widget class="QSpinBox" name="spinBoxCount">
+          <property name="minimumSize">
+           <size>
+            <width>90</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>90</width>
+            <height>16777215</height>
+           </size>
+          </property>
           <property name="maximum">
            <number>99999999</number>
           </property>

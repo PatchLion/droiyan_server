@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Form Files">
@@ -47,7 +47,17 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="KeyMapManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
     <ClCompile Include="MonsterDropInfoItem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PercentItemDelegate.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -72,24 +82,32 @@
     <Filter Include="Header Files\..\..\Server\Server\sources" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Server\Server\sources\NpcItem.h">
+      <Filter>Header Files\..\..\Server\Server\sources</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
     <CustomBuild Include="DropEditWidget.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
-    <CustomBuild Include="temp\GeneratedFiles\ui_DropEditWidget.h">
-      <Filter>Generated Files\temp\GeneratedFiles</Filter>
-    </CustomBuild>
-    <CustomBuild Include="temp\GeneratedFiles\ui_MonsterDropInfoItem.h">
-      <Filter>Generated Files\temp\GeneratedFiles</Filter>
-    </CustomBuild>
-    <CustomBuild Include="Functions.h">
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Functions.h">
       <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\..\Server\Server\sources\NpcItem.h">
-      <Filter>Header Files\..\..\Server\Server\sources</Filter>
-    </CustomBuild>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="KeyMapManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="MonsterDropInfoItem.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="PercentItemDelegate.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
   </ItemGroup>
@@ -108,6 +126,21 @@
     <ClCompile Include="temp\GeneratedFiles\moc_MonsterDropInfoItem.cpp">
       <Filter>Generated Files\temp\GeneratedFiles</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="temp\GeneratedFiles\moc_PercentItemDelegate.cpp">
+      <Filter>Generated Files\temp\GeneratedFiles</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="temp\GeneratedFiles\ui_DropEditWidget.h">
+      <Filter>Generated Files\temp\GeneratedFiles</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="temp\GeneratedFiles\ui_MonsterDropInfoItem.h">
+      <Filter>Generated Files\temp\GeneratedFiles</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="DropEditWidget.ui">

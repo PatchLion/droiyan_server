@@ -19,6 +19,8 @@ public:
 
 	void initWithData(const drop_info& info);
 	void clear();
+
+	drop_info dropInfo() const;
 private:
 	void init();
 

@@ -21,9 +21,13 @@ win32{
 }
 
 
-SOURCES += ./*.cpp
+SOURCES += ./*.cpp \
+    PercentItemDelegate.cpp \
+    KeyMapManager.cpp
 
 FORMS +=./*.ui
 
 HEADERS += ./*.h \
-          ../../Server/Server/sources/NpcItem.h
+          ../../Server/Server/sources/NpcItem.h \
+    PercentItemDelegate.h \
+    KeyMapManager.h

@@ -30,13 +30,18 @@ void CDropEditWidget::initDropInfos(const QString& rootDir)
 	m_listDropInfo.clear();
 	ui->listWidget->clear();
 
-	const QString root_path = rootDir;
+	m_rootDir = rootDir;
 
-	QDir dir(root_path);
+	QDir dir(m_rootDir);
 	QFileInfoList filelist = dir.entryInfoList(QDir::Files);
 
 	Q_FOREACH(QFileInfo fileinfo, filelist)
 	{
+		if (fileinfo.suffix().toUpper() != "INI")
+		{
+			continue;
+		}
+
 		qDebug() << "Read drop file: " << fileinfo.fileName();
 
 		drop_info dropInfo;
@@ -153,9 +158,11 @@ void CDropEditWidget::onIndexChanged()
 		ui->pushButtonNext->setEnabled(false);
 		ui->pushButtonPer->setEnabled(false);
 		ui->labelCurrentFileName->clear();
+		ui->pushButtonSave->setEnabled(false);
 	}
 	else
 	{
+		ui->pushButtonSave->setEnabled(true);
 		ui->labelIndex->setText(INDEX_TEXT(m_currentIndex, m_listDropInfo.size()));
 		if (m_currentIndex <= 0)
 		{
@@ -219,4 +226,81 @@ void CDropEditWidget::on_pushButtonSelect_clicked(bool checked)
 
 		ui->labelRootPath->setText(root_dir);
 	}
+}
+
+void CDropEditWidget::on_pushButtonSave_clicked(bool checked)
+{
+	if (m_currentIndex >=0 && m_currentIndex < m_listDropInfo.size())
+	{
+		drop_info dropinfo= ui->widgetMonsterDrop->dropInfo();
+
+		if (writeDropInfoToFile(dropinfo, m_listDropInfo[m_currentIndex].originFile))
+		{
+			m_listDropInfo[m_currentIndex] = dropinfo;
+			QMessageBox::information(this, QString::fromLocal8Bit("成功"), QString::fromLocal8Bit("保存成功"));
+		}
+		else
+		{
+			QMessageBox::warning(this, QString::fromLocal8Bit("失败"), QString::fromLocal8Bit("保存失败"));
+		}
+
+	}
+}
+
+bool CDropEditWidget::writeDropInfoToFile(const drop_info& dropinfo, const QString& outputfile)
+{
+	//backup
+	QFileInfo fileinfo(outputfile);
+	if (fileinfo.exists())
+	{
+		QDateTime datetime = QDateTime::currentDateTime();
+		QString backupsuffix = datetime.toString("-HHmmss") + ".backup";
+		QFile file(outputfile);
+		QString newName = fileinfo.fileName().replace("." + fileinfo.suffix(), "") + backupsuffix;
+		const QString newFullPath = fileinfo.absolutePath() + "/" + newName;
+		if (!file.rename(newFullPath))
+		{
+			qWarning() << "Failed to rename " << fileinfo.fileName() << " ---> " << newName;
+		}
+	}
+
+
+	QFile file(outputfile);
+	if (!file.open(QIODevice::WriteOnly | QIODevice::Text | QIODevice::Truncate))
+	{
+		return false;
+	}
+
+	QString line;
+
+	line += QString::fromLocal8Bit(dropinfo.name);
+	line += " - ";
+	line += QString::number(dropinfo.code1);
+	line += " - ";
+	line += QString::number(dropinfo.code2);
+	line += " - ";
+	line += QString::number(dropinfo.DropLeechdom);
+	line += " - ";
+	line += QString::number(dropinfo.DropNovelity);
+	line += " - ";
+	line += QString::number(dropinfo.money);
+	line += " - ";
+	line += QString::number(dropinfo.n);
+	line += "\n";
+	file.write(line.toLocal8Bit());
+	for (int i = 0; i < dropinfo.n; i++)
+	{
+		QString line2;
+		const drop_novelity& item = dropinfo.novelity[i];
+		line2 += QString::fromLocal8Bit(item.name);
+		line2 += " - ";
+		line2 += QString::number(item.code1);
+		line2 += " - ";
+		line2 += QString::number(item.code2);
+		line2 += " - ";
+		line2 += QString::number(item.per);
+		line2 += "\n";
+		file.write(line2.toLocal8Bit());
+	}
+	return true;
 }
