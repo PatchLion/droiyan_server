@@ -1,0 +1,20 @@
+#ifndef $$CLASSNAME$$_h__
+#define $$CLASSNAME$$_h__
+#include "precompiled.h"
+#include <QxOrm_Impl.h>
+class QX_DATABASE_DLL_EXPORT $$CLASSNAME$$
+{
+public:
+	$$CLASSNAME$$();
+	virtual ~$$CLASSNAME$$();
+
+public:
+	$$MEMBERAREA$$
+};
+
+$$IDENANNO$$QX_REGISTER_PRIMARY_KEY($$CLASSNAME$$, QString)
+QX_REGISTER_HPP_QX_DATABASE($$CLASSNAME$$, qx::trait::no_base_class_defined, 0)
+
+typedef qx_shared_ptr<$$CLASSNAME$$> $$CLASSNAMELOWER$$_ptr;
+typedef qx::QxCollection<QString, char_ptr> list_$$CLASSNAMELOWER$$;
+#endif // $$CLASSNAME$$_h__

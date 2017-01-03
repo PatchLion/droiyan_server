@@ -1,13 +1,23 @@
 TEMPLATE=app
 include(../public.pri)
 include(DBDataManager.pri)
-CONFIG += console
+#CONFIG += console
 TARGET = DBDataManager
 DESTDIR=./bin/$(Platform)/$(Configuration)/
 
-QT += widgets
+QT += widgets sql
 
-INCLUDEPATH += ./src
+INCLUDEPATH +=  . ./src \
+../PublicClasses
+#./DB_Classes/drgame/*.cpp \
+#./DB_Classes/droiyan/*.cpp \
+SOURCES += main.cpp \
+./src/*.cpp \
+../PublicClasses/ThreeStatesTreeWidget.cpp
 
-SOURCES += main.cpp ./src/*.cpp
-HEADERS += ./src/*.h
+#./DB_Classes/drgame/*.h \
+#./DB_Classes/droiyan/*.h \
+HEADERS += ./src/*.h \
+../PublicClasses/ThreeStatesTreeWidget.h
+
+FORMS += ./src/*.ui

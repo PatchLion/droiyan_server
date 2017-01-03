@@ -1,0 +1,19 @@
+#include "$$CLASSNAME$$.h"
+
+QX_REGISTER_CPP_QX_DATABASE($$CLASSNAME$$)
+
+$$CLASSNAME$$::$$CLASSNAME$$(){
+
+}
+$$CLASSNAME$$::~$$CLASSNAME$$(){
+
+}
+
+namespace qx {
+	template <> void register_class(QxClass<$$CLASSNAME$$> & t)
+	{
+		t.setName("$$TableName$$");
+
+		$$IMPLAREA$$
+	}
+}

@@ -1,6 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
     <Filter Include="Header Files">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
@@ -17,6 +35,17 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files\.." />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files\..\PublicClasses" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\PublicClasses\ThreeStatesTreeWidget.cpp">
+      <Filter>Source Files\..\PublicClasses</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files\src" />
@@ -27,7 +56,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Item.cpp">
+    <ClCompile Include="src\DBDataManager.cpp">
       <Filter>Source Files\src</Filter>
     </ClCompile>
   </ItemGroup>
@@ -37,26 +66,52 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <Filter Include="Header Files\.." />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\..\PublicClasses" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\PublicClasses\ThreeStatesTreeWidget.h">
+      <Filter>Header Files\..\PublicClasses</Filter>
+    </CustomBuild>
+    <CustomBuild Include="temp\GeneratedFiles\ui_DBDataManager.h">
+      <Filter>Generated Files\temp\GeneratedFiles</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\Char.h">
+      <Filter>Header Files\src</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
     <Filter Include="Header Files\src" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Char.h">
+    <CustomBuild Include="src\DBDataManager.h">
       <Filter>Header Files\src</Filter>
-    </ClInclude>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Item.h">
-      <Filter>Header Files\src</Filter>
-    </ClInclude>
+    <Filter Include="Generated Files\temp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\export.h">
-      <Filter>Header Files\src</Filter>
-    </ClInclude>
+    <Filter Include="Generated Files\temp\GeneratedFiles" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\precompiled.h">
-      <Filter>Header Files\src</Filter>
-    </ClInclude>
+    <ClCompile Include="temp\GeneratedFiles\moc_DBDataManager.cpp">
+      <Filter>Generated Files\temp\GeneratedFiles</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="temp\GeneratedFiles\moc_ThreeStatesTreeWidget.cpp">
+      <Filter>Generated Files\temp\GeneratedFiles</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Form Files\src" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\DBDataManager.ui">
+      <Filter>Form Files\src</Filter>
+    </CustomBuild>
   </ItemGroup>
 </Project>
